@@ -9,30 +9,32 @@
 import Foundation
 
 class Question {
-	var tags = [String]()
+	var tags : [String]
 	var owner = Dictionary<String, String>()
 	var answered : Bool?
 	var answerCount : Int?
-	var createDate : Int
-	var lastActivity : Int
+	var createDate : Int?
+	var lastActivity : Int?
 	var viewCount : Int
 	var votes : Int
 	
-	
 	var questionID: Int
 	var title: String
-	var link: String
 	
-	init(questionID: Int, title: String, link: String, created: Int, lastSeen: Int, viewCount: Int, score: Int, answered: Bool?) {
+	init(questionID: Int, title: String, viewCount: Int, score: Int, answered: Bool?, withTags: [String] ) {
 		self.questionID = questionID
 		self.title = title
-		self.link = link
-		self.createDate = created
-		self.lastActivity = lastSeen
 		self.viewCount = viewCount
 		self.votes = score
 		self.answered = answered
+		self.tags = withTags
 	}
+	
+//	convenience init( created: Int, lastSeen: Int) {
+//		self.init()
+//		self.createDate = created
+//		self.lastActivity = lastSeen
+//	}
 	
 	
 }

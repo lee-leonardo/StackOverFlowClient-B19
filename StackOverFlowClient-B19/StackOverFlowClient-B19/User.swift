@@ -13,19 +13,22 @@ class User {
 	var reputation: Int
 	var accountID : Int
 	var userID : Int
+	var rating: Int
 	
 	var SOEmployee : Bool?
-	var userType : String
 	
-	init(display_Name: String, reputation: Int, accountID: Int, userID: Int, userType: String, employee: Bool?) {
+	init(display_Name: String, reputation: Int, accountID: Int, userID: Int, score: Int) {
 		self.displayName = display_Name
 		self.reputation = reputation
 		self.accountID = accountID
 		self.userID = userID
-		self.userType = userType
-		if let ofSO = employee {
-			self.SOEmployee = ofSO
-		}
+		self.rating = score
+
+	}
+	
+	convenience init(isEmployee: Bool, display_Name: String, reputation: Int, accountID: Int, userID: Int, score: Int) {
+		self.init(display_Name: display_Name, reputation: reputation, accountID: accountID, userID: userID, score: score)
+		self.SOEmployee = isEmployee
 	}
 	
 }

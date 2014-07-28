@@ -9,13 +9,17 @@
 import Foundation
 
 class Answers {
-	var owner = Dictionary<String, String>()
+//	var owner : Dictionary<String, String>
 	var accepted : Bool?
 	var answerID : Int
 	var questionID : Int
+	var rating : Int
 	
-	init(question: Int, answer: Int) {
-		self.questionID = question
-		self.answerID = answer
+	init(forQuestion: Int, theAnswer: Int, score: Int) {
+//		answerer: Dictionary<String, String>,
+//		self.owner = answerer
+		self.questionID = forQuestion
+		self.answerID = theAnswer
+		self.rating = score
 	}
 }
