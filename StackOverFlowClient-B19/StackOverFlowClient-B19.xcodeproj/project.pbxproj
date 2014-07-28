@@ -12,6 +12,9 @@
 		387316961986E3B7006735D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 387316941986E3B7006735D2 /* Main.storyboard */; };
 		387316981986E3B7006735D2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 387316971986E3B7006735D2 /* Images.xcassets */; };
 		387316A41986E3B7006735D2 /* StackOverFlowClient_B19Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387316A31986E3B7006735D2 /* StackOverFlowClient_B19Tests.swift */; };
+		387B0E591986ED5A00C75A56 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387B0E581986ED5A00C75A56 /* User.swift */; };
+		387B0E5B1986EF6D00C75A56 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387B0E5A1986EF6D00C75A56 /* Question.swift */; };
+		387B0E5D1986F0A600C75A56 /* Answers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387B0E5C1986F0A600C75A56 /* Answers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,9 @@
 		3873169D1986E3B7006735D2 /* StackOverFlowClient-B19Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "StackOverFlowClient-B19Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		387316A21986E3B7006735D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		387316A31986E3B7006735D2 /* StackOverFlowClient_B19Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackOverFlowClient_B19Tests.swift; sourceTree = "<group>"; };
+		387B0E581986ED5A00C75A56 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		387B0E5A1986EF6D00C75A56 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		387B0E5C1986F0A600C75A56 /* Answers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Answers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +135,9 @@
 		387316AF1986E3F5006735D2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				387B0E581986ED5A00C75A56 /* User.swift */,
+				387B0E5A1986EF6D00C75A56 /* Question.swift */,
+				387B0E5C1986F0A600C75A56 /* Answers.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -233,7 +242,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				387316931986E3B7006735D2 /* ViewController.swift in Sources */,
+				387B0E5B1986EF6D00C75A56 /* Question.swift in Sources */,
 				387316911986E3B7006735D2 /* AppDelegate.swift in Sources */,
+				387B0E5D1986F0A600C75A56 /* Answers.swift in Sources */,
+				387B0E591986ED5A00C75A56 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,6 +433,7 @@
 				387316A91986E3B8006735D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		387316AA1986E3B8006735D2 /* Build configuration list for PBXNativeTarget "StackOverFlowClient-B19Tests" */ = {
 			isa = XCConfigurationList;
@@ -429,6 +442,7 @@
 				387316AC1986E3B8006735D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
