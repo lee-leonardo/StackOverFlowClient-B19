@@ -1,0 +1,436 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		387316911986E3B7006735D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387316901986E3B7006735D2 /* AppDelegate.swift */; };
+		387316931986E3B7006735D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387316921986E3B7006735D2 /* ViewController.swift */; };
+		387316961986E3B7006735D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 387316941986E3B7006735D2 /* Main.storyboard */; };
+		387316981986E3B7006735D2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 387316971986E3B7006735D2 /* Images.xcassets */; };
+		387316A41986E3B7006735D2 /* StackOverFlowClient_B19Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387316A31986E3B7006735D2 /* StackOverFlowClient_B19Tests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3873169E1986E3B7006735D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 387316831986E3B7006735D2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3873168A1986E3B7006735D2;
+			remoteInfo = "StackOverFlowClient-B19";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3873168B1986E3B7006735D2 /* StackOverFlowClient-B19.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "StackOverFlowClient-B19.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3873168F1986E3B7006735D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		387316901986E3B7006735D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		387316921986E3B7006735D2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		387316951986E3B7006735D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		387316971986E3B7006735D2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3873169D1986E3B7006735D2 /* StackOverFlowClient-B19Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "StackOverFlowClient-B19Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		387316A21986E3B7006735D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		387316A31986E3B7006735D2 /* StackOverFlowClient_B19Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackOverFlowClient_B19Tests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		387316881986E3B7006735D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3873169A1986E3B7006735D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		387316821986E3B7006735D2 = {
+			isa = PBXGroup;
+			children = (
+				3873168D1986E3B7006735D2 /* StackOverFlowClient-B19 */,
+				387316A01986E3B7006735D2 /* StackOverFlowClient-B19Tests */,
+				3873168C1986E3B7006735D2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3873168C1986E3B7006735D2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3873168B1986E3B7006735D2 /* StackOverFlowClient-B19.app */,
+				3873169D1986E3B7006735D2 /* StackOverFlowClient-B19Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3873168D1986E3B7006735D2 /* StackOverFlowClient-B19 */ = {
+			isa = PBXGroup;
+			children = (
+				387316901986E3B7006735D2 /* AppDelegate.swift */,
+				387316AF1986E3F5006735D2 /* Model */,
+				387316AD1986E3E0006735D2 /* Controller */,
+				387316AE1986E3EC006735D2 /* View */,
+				387316971986E3B7006735D2 /* Images.xcassets */,
+				3873168E1986E3B7006735D2 /* Supporting Files */,
+			);
+			path = "StackOverFlowClient-B19";
+			sourceTree = "<group>";
+		};
+		3873168E1986E3B7006735D2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3873168F1986E3B7006735D2 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		387316A01986E3B7006735D2 /* StackOverFlowClient-B19Tests */ = {
+			isa = PBXGroup;
+			children = (
+				387316A31986E3B7006735D2 /* StackOverFlowClient_B19Tests.swift */,
+				387316A11986E3B7006735D2 /* Supporting Files */,
+			);
+			path = "StackOverFlowClient-B19Tests";
+			sourceTree = "<group>";
+		};
+		387316A11986E3B7006735D2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				387316A21986E3B7006735D2 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		387316AD1986E3E0006735D2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				387316921986E3B7006735D2 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		387316AE1986E3EC006735D2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				387316941986E3B7006735D2 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		387316AF1986E3F5006735D2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3873168A1986E3B7006735D2 /* StackOverFlowClient-B19 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 387316A71986E3B8006735D2 /* Build configuration list for PBXNativeTarget "StackOverFlowClient-B19" */;
+			buildPhases = (
+				387316871986E3B7006735D2 /* Sources */,
+				387316881986E3B7006735D2 /* Frameworks */,
+				387316891986E3B7006735D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "StackOverFlowClient-B19";
+			productName = "StackOverFlowClient-B19";
+			productReference = 3873168B1986E3B7006735D2 /* StackOverFlowClient-B19.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3873169C1986E3B7006735D2 /* StackOverFlowClient-B19Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 387316AA1986E3B8006735D2 /* Build configuration list for PBXNativeTarget "StackOverFlowClient-B19Tests" */;
+			buildPhases = (
+				387316991986E3B7006735D2 /* Sources */,
+				3873169A1986E3B7006735D2 /* Frameworks */,
+				3873169B1986E3B7006735D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3873169F1986E3B7006735D2 /* PBXTargetDependency */,
+			);
+			name = "StackOverFlowClient-B19Tests";
+			productName = "StackOverFlowClient-B19Tests";
+			productReference = 3873169D1986E3B7006735D2 /* StackOverFlowClient-B19Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		387316831986E3B7006735D2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Leonardo Lee";
+				TargetAttributes = {
+					3873168A1986E3B7006735D2 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					3873169C1986E3B7006735D2 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 3873168A1986E3B7006735D2;
+					};
+				};
+			};
+			buildConfigurationList = 387316861986E3B7006735D2 /* Build configuration list for PBXProject "StackOverFlowClient-B19" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 387316821986E3B7006735D2;
+			productRefGroup = 3873168C1986E3B7006735D2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3873168A1986E3B7006735D2 /* StackOverFlowClient-B19 */,
+				3873169C1986E3B7006735D2 /* StackOverFlowClient-B19Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		387316891986E3B7006735D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				387316961986E3B7006735D2 /* Main.storyboard in Resources */,
+				387316981986E3B7006735D2 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3873169B1986E3B7006735D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		387316871986E3B7006735D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				387316931986E3B7006735D2 /* ViewController.swift in Sources */,
+				387316911986E3B7006735D2 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		387316991986E3B7006735D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				387316A41986E3B7006735D2 /* StackOverFlowClient_B19Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3873169F1986E3B7006735D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3873168A1986E3B7006735D2 /* StackOverFlowClient-B19 */;
+			targetProxy = 3873169E1986E3B7006735D2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		387316941986E3B7006735D2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				387316951986E3B7006735D2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		387316A51986E3B8006735D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		387316A61986E3B8006735D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		387316A81986E3B8006735D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = "StackOverFlowClient-B19/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		387316A91986E3B8006735D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = "StackOverFlowClient-B19/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		387316AB1986E3B8006735D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/StackOverFlowClient-B19.app/StackOverFlowClient-B19";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "StackOverFlowClient-B19Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		387316AC1986E3B8006735D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/StackOverFlowClient-B19.app/StackOverFlowClient-B19";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "StackOverFlowClient-B19Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		387316861986E3B7006735D2 /* Build configuration list for PBXProject "StackOverFlowClient-B19" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				387316A51986E3B8006735D2 /* Debug */,
+				387316A61986E3B8006735D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		387316A71986E3B8006735D2 /* Build configuration list for PBXNativeTarget "StackOverFlowClient-B19" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				387316A81986E3B8006735D2 /* Debug */,
+				387316A91986E3B8006735D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		387316AA1986E3B8006735D2 /* Build configuration list for PBXNativeTarget "StackOverFlowClient-B19Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				387316AB1986E3B8006735D2 /* Debug */,
+				387316AC1986E3B8006735D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 387316831986E3B7006735D2 /* Project object */;
+}
