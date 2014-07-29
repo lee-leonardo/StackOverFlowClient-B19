@@ -22,12 +22,9 @@ class NetworkController: NSObject, NSURLSessionTaskDelegate {
 
 //MARK: NetworkController Methods
 	func prepareSessionDataTask() {
-//		var baseSearchString = "http://api.stackexchange.com/docs/2.2/search?"
-//		var addSearchParam = "order=desc&sort=activity&tagged=Swift&site=stackoverflow"
-//		baseSearchString += addSearchParam
 		
-//		var url = NSURL(string: baseSearchString)
-		var url = NSURL(string: "http://api.stackexchange.com/2.2/search?order=desc&sort=activity&tagged=swift&site=stackoverflow")
+		var url = NSURL(string: SearchQuery().prepareURL())
+//		var url = NSURL(string: "http://api.stackexchange.com/2.2/search?order=desc&sort=activity&tagged=swift&site=stackoverflow")
 		
 		var request = NSMutableURLRequest(URL: url)
 		request.HTTPMethod = "GET"
@@ -45,7 +42,7 @@ class NetworkController: NSObject, NSURLSessionTaskDelegate {
 					case 200:
 						println("Good to go!")
 //						println("Response:\n\(reponse)")
-//						println("Data:\n\(data)")
+//						println("Data:\n\s(data)")
 						var jsonData : NSDictionary = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: nil) as NSDictionary
 						println("JSON Serialized Data:\n\(jsonData)")
 						

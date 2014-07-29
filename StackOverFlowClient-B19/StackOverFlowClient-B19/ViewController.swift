@@ -17,6 +17,9 @@ class ViewController: UIViewController, NetworkControllerDelegate {
 		self.networkController.delegate = self
 		
 		getJSON()
+		
+//		var queryString = SearchQuery().prepareURL()
+//		println("ViewController: \(queryString)")
 	}
 
 	override func didReceiveMemoryWarning() {
