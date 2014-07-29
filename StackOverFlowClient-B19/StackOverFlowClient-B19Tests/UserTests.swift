@@ -34,8 +34,10 @@ class UserTests: XCTestCase {
     }
 	
 	func testUserData() {
-		var sampleModel : Dictionary = ["display_name":"leoleez", "reputation":46, "accountID":140345, "userID":156273, "score":5]
+		var testPerson = User(display_Name: "leoleez", reputation: 46, accountID: 194204, userID: 1382938, score: 3)
+		
+		XCTAssertNotNil(testPerson, "Person exists!")
+		XCTAssertNotNil(testPerson.reputation, "Property should be initialized")
 		
 	}
-
 }

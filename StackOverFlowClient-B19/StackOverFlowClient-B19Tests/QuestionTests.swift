@@ -32,5 +32,11 @@ class QuestionTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
+	func testQuestionExists() {
+		var practiceQuestion = Question(questionID: 10204, title: "Pomono", viewCount: 3, score: 17, answered: true, withTags: ["Gourmand", "Gorgos", "Python"])
+		XCTAssertNotNil(practiceQuestion, "Practice question should exist!")
+		XCTAssertNil(practiceQuestion.answerCount, "This optional should not return true")
+		XCTAssertNotNil(practiceQuestion.tags[0], "Array for the tags was properly generated!")
+	}
 
 }

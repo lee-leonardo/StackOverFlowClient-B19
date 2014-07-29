@@ -32,5 +32,11 @@ class AnswerTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
+	
+	func testAnswerExample() {
+		var answers = Answers(forQuestion: 103853, theAnswer: 293204, score: 3)
+		
+		XCTAssertNotNil(answers, "This object should exists")
+	}
 
 }
