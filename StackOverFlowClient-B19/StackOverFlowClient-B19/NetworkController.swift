@@ -45,6 +45,8 @@ class NetworkController: NSObject, NSURLSessionTaskDelegate {
 //						println("Data:\n\s(data)")
 						var jsonData : NSDictionary = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: nil) as NSDictionary
 						println("JSON Serialized Data:\n\(jsonData)")
+					
+						//Add code here that'll take the JSON.
 						
 					case 400:
 						println("Bad Parameter")

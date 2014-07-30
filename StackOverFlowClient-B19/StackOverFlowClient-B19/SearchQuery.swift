@@ -29,12 +29,41 @@ class SearchQuery {
 	func prepareURL()-> String {
 		var finishedString = base
 		
-		//Make this a nested function that takes the parameters and generates a search!
+		//Make this a nested function (which checks which parts of the parameters) that takes the parameters and generates a search!
 		
 		//Test
 		//if  {} else {}
+		/*
+		//Each one should be in an if statement
+		let orderKey = orderValue.desc //Have this connected to an IBOutlet?
+		switch orderKey {
+		case .desc:
+			order += "desc"
+		case .asc:
+			order += "asc"
+		default:
+			println()
+		}
+		finishedString += order
 		
-		order += "desc"
+		//Each should be in an if
+		let sortKey = sortValue.activity //Connect to an IBOutlet?
+		switch sortKey {
+		case .activity:
+			sort += "activity"
+		case .votes:
+			sort += "votes"
+		case .creation:
+			sort += "creation"
+		case .relevance:
+			sort += "relevance"
+		default:
+			println()
+		}
+		finishedString += sort
+		*/
+		
+		
 		finishedString += order
 
 		

@@ -15,10 +15,39 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="kfw-Kf-qIQ">
+                                <rect key="frame" x="145" y="57" width="311" height="29"/>
+                                <segments>
+                                    <segment title="Activity"/>
+                                    <segment title="Votes"/>
+                                    <segment title="Creation"/>
+                                    <segment title="Relevance"/>
+                                </segments>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="5Ot-pn-pv3">
+                                <rect key="frame" x="145" y="85" width="311" height="29"/>
+                                <segments>
+                                    <segment title="Ascending"/>
+                                    <segment title="Descending"/>
+                                </segments>
+                            </segmentedControl>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="aPW-fp-OUR" id="bjL-XJ-amG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="aPW-fp-OUR">
+                    <connections>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="FMh-1U-nd1"/>
+                        <outlet property="searchContentsController" destination="BYZ-38-t0r" id="UhG-px-2Sg"/>
+                        <outlet property="searchResultsDataSource" destination="BYZ-38-t0r" id="AaW-x4-aBu"/>
+                        <outlet property="searchResultsDelegate" destination="BYZ-38-t0r" id="eAi-mS-FgO"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
         </scene>
     </scenes>
