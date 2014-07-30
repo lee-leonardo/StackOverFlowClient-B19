@@ -16,8 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="kfw-Kf-qIQ">
-                                <rect key="frame" x="145" y="57" width="311" height="29"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="kfw-Kf-qIQ">
+                                <rect key="frame" x="145" y="120" width="311" height="29"/>
                                 <segments>
                                     <segment title="Activity"/>
                                     <segment title="Votes"/>
@@ -25,8 +25,8 @@
                                     <segment title="Relevance"/>
                                 </segments>
                             </segmentedControl>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="5Ot-pn-pv3">
-                                <rect key="frame" x="145" y="85" width="311" height="29"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="5Ot-pn-pv3">
+                                <rect key="frame" x="214" y="156" width="173" height="29"/>
                                 <segments>
                                     <segment title="Ascending"/>
                                     <segment title="Descending"/>
@@ -34,7 +34,14 @@
                             </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="5Ot-pn-pv3" secondAttribute="centerX" id="5E4-8b-EWI"/>
+                            <constraint firstAttribute="centerX" secondItem="kfw-Kf-qIQ" secondAttribute="centerX" id="Eqw-Aw-X31"/>
+                            <constraint firstItem="kfw-Kf-qIQ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="56" id="K5w-0e-Osa"/>
+                            <constraint firstItem="5Ot-pn-pv3" firstAttribute="top" secondItem="kfw-Kf-qIQ" secondAttribute="bottom" constant="8" id="bGR-Fg-l8k"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="2Ku-pe-nfT"/>
                     <connections>
                         <outlet property="searchDisplayController" destination="aPW-fp-OUR" id="bjL-XJ-amG"/>
                     </connections>
@@ -49,6 +56,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
+            <point key="canvasLocation" x="953" y="136"/>
         </scene>
     </scenes>
 </document>

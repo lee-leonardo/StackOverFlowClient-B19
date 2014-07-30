@@ -1,0 +1,773 @@
+{
+	"has_more" : true,
+	"items" : [
+			   {
+      "owner" : {
+			   "link" : "http:\/\/stackoverflow.com\/users\/3425203\/user3425203",
+			   "profile_image" : "https:\/\/www.gravatar.com\/avatar\/93bf55bc615d1426e389d4692190bde6?s=128&d=identicon&r=PG&f=1",
+			   "user_id" : 3425203,
+			   "display_name" : "user3425203",
+			   "reputation" : 1,
+			   "user_type" : "registered"
+      },
+      "is_answered" : false,
+      "answer_count" : 0,
+      "score" : 0,
+      "creation_date" : 1406752411,
+      "title" : "swift NSJSONSerialization error cannot convert AnyObject to NSData",
+      "last_activity_date" : 1406752411,
+      "link" : "http:\/\/stackoverflow.com\/questions\/25046407\/swift-nsjsonserialization-error-cannot-convert-anyobject-to-nsdata",
+      "question_id" : 25046407,
+      "tags" : [
+				"ios",
+				"swift",
+				"social",
+				"nsjsonserialization"
+				],
+      "view_count" : 3
+			   },
+			   {
+      "owner" : {
+			   "link" : "http:\/\/stackoverflow.com\/users\/3815911\/davidjpeacock",
+			   "profile_image" : "https:\/\/www.gravatar.com\/avatar\/e51ce6b3fc4f7df66183737b1b084904?s=128&d=identicon&r=PG",
+			   "user_id" : 3815911,
+			   "display_name" : "davidjpeacock",
+			   "reputation" : 1,
+			   "user_type" : "registered"
+      },
+      "is_answered" : false,
+      "answer_count" : 2,
+      "score" : 0,
+      "creation_date" : 1406751785,
+      "title" : "calling method from struct in swift",
+      "last_activity_date" : 1406752375,
+      "link" : "http:\/\/stackoverflow.com\/questions\/25046226\/calling-method-from-struct-in-swift",
+      "question_id" : 25046226,
+      "tags" : [
+				"methods",
+				"struct",
+				"enums",
+				"swift"
+				],
+      "view_count" : 7
+			   },
+			   {
+      "answer_count" : 1,
+      "last_edit_date" : 1406751487,
+      "owner" : {
+			   "accept_rate" : 67,
+			   "user_type" : "registered",
+			   "link" : "http:\/\/stackoverflow.com\/users\/2052961\/christopher-ryan-cruz",
+			   "user_id" : 2052961,
+			   "display_name" : "christopher.ryan.cruz",
+			   "reputation" : 119,
+			   "profile_image" : "https:\/\/www.gravatar.com\/avatar\/d5da45dd80d2ab862314211d980a6171?s=128&d=identicon&r=PG&f=1"
+      },
+      "link" : "http:\/\/stackoverflow.com\/questions\/25045796\/enumerating-a-views-nslayoutconstraints-in-swift",
+      "tags" : [
+				"ios",
+				"swift",
+				"nslayoutconstraint"
+				],
+      "view_count" : 19,
+      "creation_date" : 1406750165,
+      "is_answered" : false,
+      "title" : "Enumerating a view&#39;s NSLayoutConstraints in Swift?",
+      "last_activity_date" : 1406751915,
+      "question_id" : 25045796,
+      "score" : 0
+			   },
+			   {
+      "owner" : {
+			   "link" : "http:\/\/stackoverflow.com\/users\/3881984\/mclawrence",
+			   "profile_image" : "https:\/\/www.gravatar.com\/avatar\/704c8f09d4342545ebbc19f0eb627a6d?s=128&d=identicon&r=PG&f=1",
+			   "user_id" : 3881984,
+			   "display_name" : "McLawrence",
+			   "reputation" : 11,
+			   "user_type" : "registered"
+      },
+      "is_answered" : false,
+      "answer_count" : 0,
+      "score" : -1,
+      "creation_date" : 1406751623,
+      "title" : "Web Client API in Swift",
+      "last_activity_date" : 1406751623,
+      "link" : "http:\/\/stackoverflow.com\/questions\/25046175\/web-client-api-in-swift",
+      "question_id" : 25046175,
+      "tags" : [
+				"ios",
+				"swift",
+				"webclient"
+				],
+      "view_count" : 4
+			   },
+			   {
+      "closed_reason" : "primarily opinion-based",
+      "answer_count" : 0,
+      "owner" : {
+			   "accept_rate" : 88,
+			   "user_type" : "registered",
+			   "link" : "http:\/\/stackoverflow.com\/users\/3705470\/masters3d",
+			   "user_id" : 3705470,
+			   "display_name" : "masters3d",
+			   "reputation" : 128,
+			   "profile_image" : "https:\/\/www.gravatar.com\/avatar\/dc959e9364c4d87d9bb5ed57a558fc5d?s=128&d=identicon&r=PG&f=1"
+      },
+      "link" : "http:\/\/stackoverflow.com\/questions\/25045649\/how-are-protocols-useful-in-swift",
+      "tags" : [
+				"swift"
+				],
+      "view_count" : 21,
+      "creation_date" : 1406749636,
+      "is_answered" : false,
+      "title" : "How are protocols useful in swift?",
+      "last_activity_date" : 1406749636,
+      "question_id" : 25045649,
+      "score" : -1,
+      "closed_date" : 1406749824
+			   },
+			   {
+      "owner" : {
+			   "link" : "http:\/\/stackoverflow.com\/users\/520901\/anand-sharma",
+			   "profile_image" : "https:\/\/www.gravatar.com\/avatar\/fdf1e1c16a31985d61bc903ad4fe0ca0?s=128&d=identicon&r=PG",
+			   "user_id" : 520901,
+			   "display_name" : "Anand Sharma",
+			   "reputation" : 6,
+			   "user_type" : "registered"
+      },
+      "is_answered" : false,
+      "answer_count" : 0,
+      "score" : 1,
+      "creation_date" : 1406749205,
+      "title" : "Swift Error while updating a simple mutable Dictionary",
+      "last_activity_date" : 1406749205,
+      "link" : "http:\/\/stackoverflow.com\/questions\/25045523\/swift-error-while-updating-a-simple-mutable-dictionary",
+      "question_id" : 25045523,
+      "tags" : [
+				"swift"
+				],
+      "view_count" : 7
+			   },
+			   {
+      "answer_count" : 0,
+      "last_edit_date" : 1406748890,
+      "owner" : {
+			   "accept_rate" : 100,
+			   "user_type" : "registered",
+			   "link" : "http:\/\/stackoverflow.com\/users\/3713952\/apple-kid",
+			   "user_id" : 3713952,
+			   "display_name" : "Apple Kid",
+			   "reputation" : 32,
+			   "profile_image" : "http:\/\/i.stack.imgur.com\/ks5Wr.jpg?s=128&g=1"
+      },
+      "link" : "http:\/\/stackoverflow.com\/questions\/24237238\/compilation-error-using-tfhpple-framework-from-swift",
+      "tags" : [
+				"objective-c",
+				"compiler-errors",
+				"swift"
+				],
+      "view_count" : 62,
+      "creation_date" : 1402897403,
+      "is_answered" : false,
+      "title" : "Compilation error using TFHpple framework from Swift",
+      "last_activity_date" : 1406748890,
+      "question_id" : 24237238,
+      "score" : 0
+			   },
+			   {
+      "closed_reason" : "duplicate",
+      "answer_count" : 0,
+      "last_edit_date" : 1406748347,
+      "owner" : {
+			   "link" : "http:\/\/stackoverflow.com\/users\/3889867\/fengtao-ft",
+			   "profile_image" : "http:\/\/i.stack.imgur.com\/BJUiO.png?s=128&g=1",
+			   "user_id" : 3889867,
+			   "display_name" : "fengtao.ft",
+			   "reputation" : 1,
+			   "user_type" : "registered"
+      },
+      "link" : "http:\/\/stackoverflow.com\/questions\/25027874\/using-uialertcontroller-in-swift-code-cause-crash-when-run-the-code-on-a-ios-7-d",
+      "tags" : [
+				"ios7",
+				"crash",
+				"swift",
+				"uialertview",
+				"uialertcontroller"
+				],
+      "view_count" : 16,
+      "creation_date" : 1406687485,
+      "is_answered" : false,
+      "title" : "using uialertcontroller in swift code cause crash when run the code on a iOS 7 device",
+      "last_activity_date" : 1406748347,
+      "question_id" : 25027874,
+      "score" : 0,
+      "closed_date" : 1406708237
+			   },
+			   {
+      "answer_count" : 1,
+      "last_edit_date" : 1405675966,
+      "owner" : {
+			   "link" : "http:\/\/stackoverflow.com\/users\/1329435\/jackzeng",
+			   "profile_image" : "https:\/\/www.gravatar.com\/avatar\/2c2b6d6a5cbc66562c4082cf16ceedd1?s=128&d=identicon&r=PG",
+			   "user_id" : 1329435,
+			   "display_name" : "JackZeng",
+			   "reputation" : 16,
+			   "user_type" : "registered"
+      },
+      "link" : "http:\/\/stackoverflow.com\/questions\/24233589\/xcode6-cant-run-any-app-in-simulator-domain-nsposixerrordomain-code-3",
+      "tags" : [
+				"ios-simulator",
+				"swift",
+				"xcode6"
+				],
+      "view_count" : 349,
+      "creation_date" : 1402862391,
+      "is_answered" : false,
+      "title" : "Xcode6 can&#39;t run any app in simulator ( Domain = NSPOSIXErrorDomain, Code = 3 )",
+      "last_activity_date" : 1406748262,
+      "question_id" : 24233589,
+      "score" : 3
+			   },
+			   {
+      "answer_count" : 1,
+      "last_edit_date" : 1405291436,
+      "owner" : {
+			   "link" : "http:\/\/stackoverflow.com\/users\/407687\/josh-prismon",
+			   "profile_image" : "https:\/\/www.gravatar.com\/avatar\/8b0186861eb34afc120f00fee2424ae8?s=128&d=identicon&r=PG",
+			   "user_id" : 407687,
+			   "display_name" : "Josh Prismon",
+			   "reputation" : 11,
+			   "user_type" : "registered"
+      },
+      "link" : "http:\/\/stackoverflow.com\/questions\/24727499\/wkwebview-screenshots",
+      "tags" : [
+				"swift"
+				],
+      "view_count" : 42,
+      "creation_date" : 1405290754,
+      "is_answered" : false,
+      "title" : "WKWebView Screenshots",
+      "last_activity_date" : 1406747398,
+      "question_id" : 24727499,
+      "score" : 2
+			   },
+			   {
+      "answer_count" : 2,
+      "last_edit_date" : 1403529440,
+      "owner" : {
+			   "link" : "http:\/\/stackoverflow.com\/users\/3083382\/mike-s",
+			   "profile_image" : "http:\/\/i.stack.imgur.com\/Yx4cK.jpg?s=128&g=1",
+			   "user_id" : 3083382,
+			   "display_name" : "Mike S.",
+			   "reputation" : 46,
+			   "user_type" : "registered"
+      },
+      "link" : "http:\/\/stackoverflow.com\/questions\/24084701\/how-to-pass-an-error-pointer-in-the-swift-language",
+      "tags" : [
+				"swift"
+				],
+      "view_count" : 609,
+      "creation_date" : 1402066110,
+      "is_answered" : true,
+      "title" : "How to pass an error pointer in the Swift language?",
+      "accepted_answer_id" : 24084786,
+      "last_activity_date" : 1406747377,
+      "question_id" : 24084701,
+      "score" : 3
+			   },
+			   {
+      "answer_count" : 2,
+      "owner" : {
+			   "accept_rate" : 77,
+			   "user_type" : "registered",
+			   "link" : "http:\/\/stackoverflow.com\/users\/1639164\/user1639164",
+			   "user_id" : 1639164,
+			   "display_name" : "user1639164",
+			   "reputation" : 382,
+			   "profile_image" : "http:\/\/i.stack.imgur.com\/Da5jN.jpg?s=128&g=1"
+      },
+      "link" : "http:\/\/stackoverflow.com\/questions\/25043971\/calling-a-parents-function-in-swift",
+      "tags" : [
+				"swift",
+				"sprite-kit",
+				"parent"
+				],
+      "view_count" : 30,
+      "creation_date" : 1406743852,
+      "is_answered" : true,
+      "title" : "Calling a parent&#39;s function in Swift",
+      "accepted_answer_id" : 25044074,
+      "last_activity_date" : 1406746417,
+      "question_id" : 25043971,
+      "score" : 0
+			   },
+			   {
+      "owner" : {
+			   "accept_rate" : 75,
+			   "user_type" : "registered",
+			   "link" : "http:\/\/stackoverflow.com\/users\/1895411\/trollbrot",
+			   "user_id" : 1895411,
+			   "display_name" : "Trollbrot",
+			   "reputation" : 70,
+			   "profile_image" : "https:\/\/www.gravatar.com\/avatar\/c48ba3e9f6c3d2ee4836697efa1c08c6?s=128&d=identicon&r=PG"
+      },
+      "is_answered" : true,
+      "answer_count" : 2,
+      "score" : 0,
+      "creation_date" : 1406712661,
+      "title" : "Sprite Kit - Notifier that a node is leaving the screen",
+      "last_activity_date" : 1406744813,
+      "link" : "http:\/\/stackoverflow.com\/questions\/25033279\/sprite-kit-notifier-that-a-node-is-leaving-the-screen",
+      "question_id" : 25033279,
+      "tags" : [
+				"ios",
+				"objective-c",
+				"swift",
+				"sprite-kit"
+				],
+      "view_count" : 26
+			   },
+			   {
+      "answer_count" : 0,
+      "last_edit_date" : 1406744464,
+      "owner" : {
+			   "link" : "http:\/\/stackoverflow.com\/users\/3892346\/potter",
+			   "profile_image" : "https:\/\/www.gravatar.com\/avatar\/b834aed94e56d784c7d30d7dce2ebe04?s=128&d=identicon&r=PG&f=1",
+			   "user_id" : 3892346,
+			   "display_name" : "Potter",
+			   "reputation" : 6,
+			   "user_type" : "registered"
+      },
+      "link" : "http:\/\/stackoverflow.com\/questions\/25042580\/screens-real-size-is-bigger-than-what-i-see",
+      "tags" : [
+				"ios",
+				"swift",
+				"sprite-kit",
+				"xcode6"
+				],
+      "view_count" : 40,
+      "creation_date" : 1406739186,
+      "is_answered" : false,
+      "title" : "Screen&#39;s real size is bigger than what I see",
+      "last_activity_date" : 1406744464,
+      "question_id" : 25042580,
+      "score" : 1
+			   },
+			   {
+      "closed_reason" : "off-topic",
+      "answer_count" : 0,
+      "owner" : {
+			   "link" : "http:\/\/stackoverflow.com\/users\/3884702\/francesco84",
+			   "profile_image" : "https:\/\/www.gravatar.com\/avatar\/1df2dc6e494762aae1e821f6268d53e1?s=128&d=identicon&r=PG&f=1",
+			   "user_id" : 3884702,
+			   "display_name" : "francesco84",
+			   "reputation" : 1,
+			   "user_type" : "registered"
+      },
+      "link" : "http:\/\/stackoverflow.com\/questions\/25044072\/dispatch-asyncdispatch-get-global-queue0-dispatch-queue-priority-default-err",
+      "tags" : [
+				"swift",
+				"uiimagepickercontroller"
+				],
+      "view_count" : 19,
+      "creation_date" : 1406744189,
+      "is_answered" : false,
+      "title" : "dispatch_async(dispatch_get_global_queue(0, DISPATCH_QUEUE_PRIORITY_DEFAULT) error : Int is not convetible to UInt",
+      "last_activity_date" : 1406744189,
+      "question_id" : 25044072,
+      "score" : -2,
+      "closed_date" : 1406748470
+			   },
+			   {
+      "owner" : {
+			   "accept_rate" : 60,
+			   "user_type" : "registered",
+			   "link" : "http:\/\/stackoverflow.com\/users\/3847060\/user3847060",
+			   "user_id" : 3847060,
+			   "display_name" : "user3847060",
+			   "reputation" : 22,
+			   "profile_image" : "https:\/\/www.gravatar.com\/avatar\/fa4cb5880ffba006aa0d4b58d1daa927?s=128&d=identicon&r=PG&f=1"
+      },
+      "is_answered" : true,
+      "answer_count" : 1,
+      "score" : 0,
+      "creation_date" : 1406742699,
+      "title" : "add more items it object during runtime.",
+      "last_activity_date" : 1406742824,
+      "link" : "http:\/\/stackoverflow.com\/questions\/25043623\/add-more-items-it-object-during-runtime",
+      "question_id" : 25043623,
+      "tags" : [
+				"swift"
+				],
+      "view_count" : 16
+			   },
+			   {
+      "answer_count" : 1,
+      "owner" : {
+			   "link" : "http:\/\/stackoverflow.com\/users\/1597274\/macu",
+			   "profile_image" : "https:\/\/www.gravatar.com\/avatar\/e5513e567a63a0338b5be984ad7e0ce4?s=128&d=identicon&r=PG",
+			   "user_id" : 1597274,
+			   "display_name" : "macu",
+			   "reputation" : 28,
+			   "user_type" : "registered"
+      },
+      "link" : "http:\/\/stackoverflow.com\/questions\/25042695\/swift-converting-from-unsafepointeruint8-with-length-to-string",
+      "tags" : [
+				"swift",
+				"type-conversion"
+				],
+      "view_count" : 18,
+      "creation_date" : 1406739589,
+      "is_answered" : true,
+      "title" : "Swift - converting from UnsafePointer&lt;UInt8&gt; with length to String",
+      "accepted_answer_id" : 25043613,
+      "last_activity_date" : 1406742659,
+      "question_id" : 25042695,
+      "score" : 0
+			   },
+			   {
+      "answer_count" : 3,
+      "last_edit_date" : 1406742121,
+      "owner" : {
+			   "link" : "http:\/\/stackoverflow.com\/users\/3892545\/rocket101",
+			   "profile_image" : "https:\/\/www.gravatar.com\/avatar\/b5a795aea0aae609c95f79b030c1d477?s=128&d=identicon&r=PG&f=1",
+			   "user_id" : 3892545,
+			   "display_name" : "rocket101",
+			   "reputation" : 7,
+			   "user_type" : "registered"
+      },
+      "link" : "http:\/\/stackoverflow.com\/questions\/25043323\/changing-text-of-swift-uilabel",
+      "tags" : [
+				"ios",
+				"swift",
+				"uilabel",
+				"iboutlet"
+				],
+      "view_count" : 40,
+      "creation_date" : 1406741614,
+      "is_answered" : true,
+      "title" : "Changing text of Swift UILabel",
+      "accepted_answer_id" : 25043468,
+      "last_activity_date" : 1406742509,
+      "question_id" : 25043323,
+      "score" : 0
+			   },
+			   {
+      "closed_reason" : "off-topic",
+      "answer_count" : 0,
+      "owner" : {
+			   "link" : "http:\/\/stackoverflow.com\/users\/3892598\/user3892598",
+			   "profile_image" : "https:\/\/www.gravatar.com\/avatar\/d93b22b9ee6f7d5507b57850d6401c4f?s=128&d=identicon&r=PG&f=1",
+			   "user_id" : 3892598,
+			   "display_name" : "user3892598",
+			   "reputation" : 1,
+			   "user_type" : "registered"
+      },
+      "link" : "http:\/\/stackoverflow.com\/questions\/25043475\/can-i-get-this-objective-c-translated-to-swift",
+      "tags" : [
+				"objective-c",
+				"swift"
+				],
+      "view_count" : 30,
+      "creation_date" : 1406742222,
+      "is_answered" : false,
+      "title" : "Can I get this objective c translated to swift",
+      "last_activity_date" : 1406742222,
+      "question_id" : 25043475,
+      "score" : -6,
+      "closed_date" : 1406748892
+			   },
+			   {
+      "answer_count" : 1,
+      "last_edit_date" : 1406739859,
+      "owner" : {
+			   "accept_rate" : 75,
+			   "user_type" : "registered",
+			   "link" : "http:\/\/stackoverflow.com\/users\/2720967\/samiljin",
+			   "user_id" : 2720967,
+			   "display_name" : "samiljin",
+			   "reputation" : 27,
+			   "profile_image" : "https:\/\/www.gravatar.com\/avatar\/309c4d85fcd3e372ac41d89c560ca934?s=128&d=identicon&r=PG&f=1"
+      },
+      "link" : "http:\/\/stackoverflow.com\/questions\/25042491\/prepareforsegue-called-but-not-loading-the-next-uiviewcontroller",
+      "tags" : [
+				"ios",
+				"uiviewcontroller",
+				"swift",
+				"segue",
+				"uistoryboardsegue"
+				],
+      "view_count" : 27,
+      "creation_date" : 1406738956,
+      "is_answered" : true,
+      "title" : "prepareForSegue called but not loading the next UIViewController",
+      "accepted_answer_id" : 25042700,
+      "last_activity_date" : 1406739859,
+      "question_id" : 25042491,
+      "score" : 2
+			   },
+			   {
+      "answer_count" : 4,
+      "last_edit_date" : 1404232795,
+      "owner" : {
+			   "link" : "http:\/\/stackoverflow.com\/users\/155417\/chalkers",
+			   "profile_image" : "https:\/\/www.gravatar.com\/avatar\/0333c8c993f63d263c9bc59ad2c35a9b?s=128&d=identicon&r=PG",
+			   "user_id" : 155417,
+			   "display_name" : "Chalkers",
+			   "reputation" : 501,
+			   "user_type" : "registered"
+      },
+      "link" : "http:\/\/stackoverflow.com\/questions\/24004776\/input-from-the-keyboard-in-command-line-application",
+      "tags" : [
+				"osx",
+				"cocoa",
+				"swift"
+				],
+      "view_count" : 1910,
+      "creation_date" : 1401750952,
+      "is_answered" : true,
+      "title" : "Input from the keyboard in command line application",
+      "accepted_answer_id" : 24021467,
+      "last_activity_date" : 1406739190,
+      "question_id" : 24004776,
+      "score" : 15
+			   },
+			   {
+      "owner" : {
+			   "accept_rate" : 61,
+			   "user_type" : "registered",
+			   "link" : "http:\/\/stackoverflow.com\/users\/1334703\/%e5%ad%a4%e9%ad%82%e6%a5%9a",
+			   "user_id" : 1334703,
+			   "display_name" : "孤魂楚",
+			   "reputation" : 196,
+			   "profile_image" : "https:\/\/www.gravatar.com\/avatar\/eba1a2fe0dcc435db3c375a342b49ceb?s=128&d=identicon&r=PG&f=1"
+      },
+      "is_answered" : false,
+      "answer_count" : 0,
+      "score" : 0,
+      "creation_date" : 1406739158,
+      "title" : "swift:How radio menu?",
+      "last_activity_date" : 1406739158,
+      "link" : "http:\/\/stackoverflow.com\/questions\/25042568\/swifthow-radio-menu",
+      "question_id" : 25042568,
+      "tags" : [
+				"osx",
+				"swift",
+				"swift-playground"
+				],
+      "view_count" : 11
+			   },
+			   {
+      "answer_count" : 1,
+      "last_edit_date" : 1406738005,
+      "owner" : {
+			   "link" : "http:\/\/stackoverflow.com\/users\/3876172\/tosen",
+			   "profile_image" : "http:\/\/i.stack.imgur.com\/LtAN4.jpg?s=128&g=1",
+			   "user_id" : 3876172,
+			   "display_name" : "Tosen",
+			   "reputation" : 34,
+			   "user_type" : "registered"
+      },
+      "link" : "http:\/\/stackoverflow.com\/questions\/25034515\/load-a-view-and-its-webview-object-in-the-background-and-then-performing-the",
+      "tags" : [
+				"ios",
+				"xcode",
+				"uiwebview",
+				"swift"
+				],
+      "view_count" : 28,
+      "creation_date" : 1406716129,
+      "is_answered" : false,
+      "title" : "Load a View (and it&#39;s WebView object) in the Background and then performing the Segue",
+      "last_activity_date" : 1406738005,
+      "question_id" : 25034515,
+      "score" : 0
+			   },
+			   {
+      "answer_count" : 2,
+      "last_edit_date" : 1406301007,
+      "bounty_amount" : 50,
+      "owner" : {
+			   "accept_rate" : 80,
+			   "user_type" : "registered",
+			   "link" : "http:\/\/stackoverflow.com\/users\/59541\/nate-cook",
+			   "user_id" : 59541,
+			   "display_name" : "Nate Cook",
+			   "reputation" : 4710,
+			   "profile_image" : "https:\/\/www.gravatar.com\/avatar\/5f463dd4e7af28b64ad8f0e032ee82dc?s=128&d=identicon&r=PG"
+      },
+      "link" : "http:\/\/stackoverflow.com\/questions\/24887454\/how-can-i-retrieve-swift-header-files-for-cocoa-apis",
+      "tags" : [
+				"objective-c",
+				"xcode",
+				"cocoa",
+				"swift"
+				],
+      "view_count" : 188,
+      "creation_date" : 1406032149,
+      "is_answered" : true,
+      "title" : "How can I retrieve Swift &quot;header&quot; files for Cocoa APIs?",
+      "bounty_closes_date" : 1406818602,
+      "last_activity_date" : 1406737971,
+      "question_id" : 24887454,
+      "score" : 6
+			   },
+			   {
+      "answer_count" : 1,
+      "last_edit_date" : 1406737897,
+      "owner" : {
+			   "link" : "http:\/\/stackoverflow.com\/users\/1556715\/rohit",
+			   "profile_image" : "https:\/\/www.gravatar.com\/avatar\/63aa576412fa8b694f0f92b9f47f5097?s=128&d=identicon&r=PG&f=1",
+			   "user_id" : 1556715,
+			   "display_name" : "Rohit",
+			   "reputation" : 340,
+			   "user_type" : "registered"
+      },
+      "link" : "http:\/\/stackoverflow.com\/questions\/25035943\/xcode-6-storyboard-size-not-changing-when-selecting-wregular-hregular-from-w",
+      "tags" : [
+				"ios",
+				"swift",
+				"xcode6"
+				],
+      "view_count" : 14,
+      "creation_date" : 1406720517,
+      "is_answered" : true,
+      "title" : "Xcode 6: storyboard size not changing when selecting w:Regular h:Regular from w:compact h:regular",
+      "last_activity_date" : 1406737897,
+      "question_id" : 25035943,
+      "score" : 1
+			   },
+			   {
+      "answer_count" : 0,
+      "last_edit_date" : 1406737589,
+      "owner" : {
+			   "link" : "http:\/\/stackoverflow.com\/users\/3722523\/user3722523",
+			   "profile_image" : "https:\/\/www.gravatar.com\/avatar\/8f654127206d78b1e5b448f7206f03ea?s=128&d=identicon&r=PG&f=1",
+			   "user_id" : 3722523,
+			   "display_name" : "user3722523",
+			   "reputation" : 43,
+			   "user_type" : "registered"
+      },
+      "link" : "http:\/\/stackoverflow.com\/questions\/24983177\/found-nil-while-unwrapping-an-optional-value-spritekit",
+      "tags" : [
+				"ios",
+				"swift",
+				"sprite-kit"
+				],
+      "view_count" : 82,
+      "creation_date" : 1406479731,
+      "is_answered" : false,
+      "title" : "found nil while unwrapping an Optional value - spriteKit",
+      "last_activity_date" : 1406737589,
+      "question_id" : 24983177,
+      "score" : 2
+			   },
+			   {
+      "owner" : {
+			   "link" : "http:\/\/stackoverflow.com\/users\/3714585\/user3714585",
+			   "profile_image" : "http:\/\/graph.facebook.com\/1133605687\/picture?type=large",
+			   "user_id" : 3714585,
+			   "display_name" : "user3714585",
+			   "reputation" : 17,
+			   "user_type" : "registered"
+      },
+      "is_answered" : false,
+      "answer_count" : 0,
+      "score" : -1,
+      "creation_date" : 1406736616,
+      "title" : "About Xcode Optional Argument",
+      "last_activity_date" : 1406736616,
+      "link" : "http:\/\/stackoverflow.com\/questions\/25041754\/about-xcode-optional-argument",
+      "question_id" : 25041754,
+      "tags" : [
+				"swift",
+				"swift-playground",
+				"xcode6-beta4"
+				],
+      "view_count" : 15
+			   },
+			   {
+      "answer_count" : 2,
+      "last_edit_date" : 1406735093,
+      "bounty_amount" : 50,
+      "owner" : {
+			   "accept_rate" : 92,
+			   "user_type" : "registered",
+			   "link" : "http:\/\/stackoverflow.com\/users\/2446155\/santa-claus",
+			   "user_id" : 2446155,
+			   "display_name" : "Santa Claus",
+			   "reputation" : 2927,
+			   "profile_image" : "https:\/\/www.gravatar.com\/avatar\/bf3bc26e513b78cfa6793b164feee21b?s=128&d=identicon&r=PG&f=1"
+      },
+      "link" : "http:\/\/stackoverflow.com\/questions\/24997536\/runtime-error-when-using-corefoundation-objects-in-a-swift-nsobject-subclass",
+      "tags" : [
+				"ios",
+				"arrays",
+				"swift",
+				"nsobject"
+				],
+      "view_count" : 63,
+      "creation_date" : 1406557791,
+      "is_answered" : true,
+      "title" : "Runtime error when using CoreFoundation objects in a swift NSObject subclass",
+      "bounty_closes_date" : 1407335542,
+      "last_activity_date" : 1406735093,
+      "question_id" : 24997536,
+      "score" : 2
+			   },
+			   {
+      "owner" : {
+			   "accept_rate" : 73,
+			   "user_type" : "registered",
+			   "link" : "http:\/\/stackoverflow.com\/users\/3361588\/bas",
+			   "user_id" : 3361588,
+			   "display_name" : "Bas",
+			   "reputation" : 512,
+			   "profile_image" : "http:\/\/i.stack.imgur.com\/8RMOl.jpg?s=128&g=1"
+      },
+      "is_answered" : false,
+      "answer_count" : 1,
+      "score" : 0,
+      "creation_date" : 1406723154,
+      "title" : "Swift: Using core data with tabbed based application error: &#39;Cannot create an NSPersistentStoreCoordinator with a nil model&#39;",
+      "last_activity_date" : 1406734370,
+      "link" : "http:\/\/stackoverflow.com\/questions\/25036802\/swift-using-core-data-with-tabbed-based-application-error-cannot-create-an-ns",
+      "question_id" : 25036802,
+      "tags" : [
+				"core-data",
+				"swift"
+				],
+      "view_count" : 27
+			   },
+			   {
+      "answer_count" : 1,
+      "owner" : {
+			   "accept_rate" : 68,
+			   "user_type" : "registered",
+			   "link" : "http:\/\/stackoverflow.com\/users\/356105\/avalon",
+			   "user_id" : 356105,
+			   "display_name" : "Avalon",
+			   "reputation" : 532,
+			   "profile_image" : "https:\/\/www.gravatar.com\/avatar\/7c411478d988aeab3111d2c20ac58880?s=128&d=identicon&r=PG"
+      },
+      "link" : "http:\/\/stackoverflow.com\/questions\/25040700\/swift-create-mutable-array-with-empty-fields",
+      "tags" : [
+				"ios",
+				"arrays",
+				"cocoa-touch",
+				"generics",
+				"swift"
+				],
+      "view_count" : 37,
+      "creation_date" : 1406733723,
+      "is_answered" : true,
+      "title" : "Swift: Create mutable array with empty fields",
+      "accepted_answer_id" : 25040919,
+      "last_activity_date" : 1406734344,
+      "question_id" : 25040700,
+      "score" : 2
+			   }
+			   ],
+	"quota_max" : 300,
+	"quota_remaining" : 292
+}

@@ -28,6 +28,7 @@ class SearchQuery {
 	
 	func prepareURL()-> String {
 		var finishedString = base
+		var urlSegments = [String]()
 		
 		//Make this a nested function (which checks which parts of the parameters) that takes the parameters and generates a search!
 		
@@ -63,13 +64,11 @@ class SearchQuery {
 		finishedString += sort
 		*/
 		
-		
+		order += "asc"
 		finishedString += order
-
 		
 		sort += "activity"
 		finishedString += sort
-		
 		
 		tagged += "Swift"
 		finishedString += tagged
@@ -77,9 +76,28 @@ class SearchQuery {
 //		intitle += "How"
 //		finishedString += intitle
 		
+		
+//		for segment in urlSegments {
+//			println("\(segment)")
+//		}
+		
+//		for var index = 0; index < urlSegments.count; index++ {
+//			var segment = ""
+//			if index != 0 {
+//				segment += urlSegments.removeAtIndex(0)
+//			} else {
+//				segment += "&"
+//				segment += urlSegments.removeAtIndex(0)
+//			}
+//			finishedString += segment
+//		}
+
 		finishedString += site
+
 		
 		println("Within Search Query: \(finishedString)")
 		return finishedString
 	}
 }
+
+

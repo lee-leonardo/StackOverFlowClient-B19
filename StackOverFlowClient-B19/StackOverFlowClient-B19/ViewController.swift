@@ -11,15 +11,13 @@ import UIKit
 class ViewController: UIViewController, NetworkControllerDelegate {
 	
 	let networkController = NetworkController()
+	var questions: [Question]?
                             
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		self.networkController.delegate = self
 		
-		getJSON()
-		
-//		var queryString = SearchQuery().prepareURL()
-//		println("ViewController: \(queryString)")
+		getJSON(true)
 	}
 
 	override func didReceiveMemoryWarning() {
@@ -28,9 +26,24 @@ class ViewController: UIViewController, NetworkControllerDelegate {
 	
 //MARK: View Controller methods
 //TODO: getJSON
-	func getJSON() {		
-		self.networkController.prepareSessionDataTask()
-
+	func getJSON(fromSample: Bool?) {
+		if fromSample {
+			
+		}
+		self.networkController.fetchQuestionsForSearchTerm("", callback: {
+			(questions: [Question]?, errorDescription: String?) -> Void in
+			if errorDescription {
+				//Error handling.
+			} else {
+				NSOperationQueue.mainQueue().addOperationWithBlock({
+					() -> Void in
+//					self.questions = questions
+//					self.tableView.reloadData()
+					})
+				
+//				println(questions)
+			}
+			})
 	}
 	
 	
