@@ -9,15 +9,18 @@
 import Foundation
 
 class User {
-	var displayName: String
-	var reputation: Int
-	var accountID : Int
-	var userID : Int
-	var rating: Int
+	var displayName: String?
+	var reputation: Int?
+	var accountID : Int?
+	var userID : Int?
+	var rating: Int?
 	
 	var SOEmployee : Bool?
 	
-	init(display_Name: String, reputation: Int, accountID: Int, userID: Int, score: Int) {
+	init() {}
+	
+	convenience init(display_Name: String, reputation: Int, accountID: Int, userID: Int, score: Int) {
+		self.init()
 		self.displayName = display_Name
 		self.reputation = reputation
 		self.accountID = accountID

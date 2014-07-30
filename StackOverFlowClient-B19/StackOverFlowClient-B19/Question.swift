@@ -11,20 +11,26 @@ import Foundation
 class Question {
 //	title, questionID, tags, answer_count, display_name, userID
 	
-	
-	var tags : [String]?
-	var owner = Dictionary<String, String>()
-	var answered : Bool?
+	var title: String?
+	var questionID: Int?
 	var answerCount : Int?
+	var displayName : String?
+	var userID: Int?
+	var tags : [String]?
+	
+	
+	var answered : Bool?
 	var createDate : Int?
 	var lastActivity : Int?
 	var viewCount : Int?
 	var votes : Int?
 	
-	var questionID: Int?
-	var title: String?
 	
-	init(questionID: Int, title: String, viewCount: Int, score: Int, answered: Bool?, withTags: [String] ) {
+	
+	init () {}
+	
+	convenience init(questionID: Int, title: String, viewCount: Int, score: Int, answered: Bool?, withTags: [String] ) {
+		self.init()
 		self.questionID = questionID
 		self.title = title
 		self.viewCount = viewCount
@@ -33,11 +39,11 @@ class Question {
 		self.tags = withTags
 	}
 	
-//	convenience init( created: Int, lastSeen: Int) {
-//		self.init()
-//		self.createDate = created
-//		self.lastActivity = lastSeen
-//	}
+	convenience init( created: Int, lastSeen: Int) {
+		self.init()
+		self.createDate = created
+		self.lastActivity = lastSeen
+	}
 	
 	
 }

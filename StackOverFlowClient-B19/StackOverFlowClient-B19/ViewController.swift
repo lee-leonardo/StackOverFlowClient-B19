@@ -17,7 +17,7 @@ class ViewController: UIViewController, NetworkControllerDelegate {
 		super.viewDidLoad()
 		self.networkController.delegate = self
 		
-		getJSON(true)
+		getJSON(fromSample: true)
 	}
 
 	override func didReceiveMemoryWarning() {
@@ -26,9 +26,22 @@ class ViewController: UIViewController, NetworkControllerDelegate {
 	
 //MARK: View Controller methods
 //TODO: getJSON
-	func getJSON(fromSample: Bool?) {
+	func getJSON(fromSample: Bool? = false) {
 		if fromSample {
-			
+			self.networkController.fetchQuestionsFromSampleData({
+				(questions: [Question]?, errorDescription: String?) -> Void in
+				if errorDescription {
+					//Error handling.
+				} else {
+					NSOperationQueue.mainQueue().addOperationWithBlock({
+						() -> Void in
+						//					self.questions = questions
+						//					self.tableView.reloadData()
+						})
+					
+					//				println(questions)
+				}
+				})
 		}
 		self.networkController.fetchQuestionsForSearchTerm("", callback: {
 			(questions: [Question]?, errorDescription: String?) -> Void in
