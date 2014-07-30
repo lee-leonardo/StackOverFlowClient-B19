@@ -26,10 +26,34 @@ class NetworkController: NSObject, NSURLSessionTaskDelegate {
 		
 		if let dataDict = NSJSONSerialization.JSONObjectWithData(inputJSONData, options: nil, error: nil) as? NSDictionary {
 			//This is where I'll draw data from the item dictionary and apply then use a question initializer to build them up from the dictionary built here.
+			//println(dataDict) //This is the whole dictionary
+			if let items = dataDict["items"] as? NSArray {
+				//println(item) //This is the whole list of question
+				for item in items {
+					//println(item) //This is an individual question
+					if let itemEntry = item as? NSDictionary {
+						//println("Individual Item Entry: \(itemEntry)")
+						//, , ,, display_name, userID
+
+						let question = Question()
+						question.title = itemEntry["title"] as? String
+						question.questionID = itemEntry["user_id"] as? Int
+						question.answerCount = itemEntry["answer_count"] as? Int
+						question.tags = itemEntry["tags"] as? Array
+						
+						if let itemOwner = itemEntry["owner"] as? NSDictionary {
+							question.displayName = itemOwner["display_name"] as? String
+							question.userID = itemOwner["user_id"] as? Int
+						}
+						
+						//println("\(question.displayName): \(question.title)")
+						questions.append(question)
+					}
+				}
+			}
 		}
 		
-		
-		
+		//println(questions)
 		return questions
 	}
 	
@@ -107,6 +131,18 @@ class NetworkController: NSObject, NSURLSessionTaskDelegate {
 	
 	
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 //This would be an extra challenge.... do not focus on right now!
 //MARK: SearchStringGenerator method
 	struct api {
@@ -140,7 +176,6 @@ class NetworkController: NSObject, NSURLSessionTaskDelegate {
 	
 	func prepareURL()-> String {
 		var returnString = apiDomain + version + search
-		
 		
 		//Make this a nested function (which checks which parts of the parameters) that takes the parameters and generates a search!
 		

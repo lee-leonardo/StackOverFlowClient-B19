@@ -19,11 +19,11 @@ class Question {
 	var tags : [String]?
 	
 	
-	var answered : Bool?
-	var createDate : Int?
-	var lastActivity : Int?
-	var viewCount : Int?
-	var votes : Int?
+//	var answered : Bool?
+//	var createDate : Int?
+//	var lastActivity : Int?
+//	var viewCount : Int?
+//	var votes : Int?
 	
 	
 	
@@ -33,17 +33,9 @@ class Question {
 		self.init()
 		self.questionID = questionID
 		self.title = title
-		self.viewCount = viewCount
-		self.votes = score
-		self.answered = answered
+//		self.viewCount = viewCount
+//		self.votes = score
+//		self.answered = answered
 		self.tags = withTags
 	}
-	
-	convenience init( created: Int, lastSeen: Int) {
-		self.init()
-		self.createDate = created
-		self.lastActivity = lastSeen
-	}
-	
-	
 }

@@ -8,8 +8,9 @@
 
 import UIKit
 
-class ViewController: UIViewController, NetworkControllerDelegate {
+class ViewController: UIViewController, NetworkControllerDelegate, UITableViewDataSource {
 	
+	@IBOutlet weak var tableView: UITableView!
 	let networkController = NetworkController()
 	var questions: [Question]?
                             
@@ -35,11 +36,10 @@ class ViewController: UIViewController, NetworkControllerDelegate {
 				} else {
 					NSOperationQueue.mainQueue().addOperationWithBlock({
 						() -> Void in
-						//					self.questions = questions
-						//					self.tableView.reloadData()
+						self.questions = questions
+						self.tableView.reloadData()
 						})
-					
-					//				println(questions)
+					//println(questions)
 				}
 				})
 		}
@@ -50,14 +50,36 @@ class ViewController: UIViewController, NetworkControllerDelegate {
 			} else {
 				NSOperationQueue.mainQueue().addOperationWithBlock({
 					() -> Void in
-//					self.questions = questions
-//					self.tableView.reloadData()
+					self.questions = questions
+					self.tableView.reloadData()
 					})
 				
 //				println(questions)
 			}
 			})
 	}
+	
+//MARK: UITableViewDataSource
+	func tableView(tableView: UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell! {
+		var cell = tableView.dequeueReusableCellWithIdentifier("QuestionCell", forIndexPath: indexPath) as UITableViewCell
+		
+		if questions {
+			var questionDetail = questions![indexPath.row]
+			cell.textLabel.text = questionDetail.title
+
+		}
+		
+		
+		return cell
+	}
+	func tableView(tableView: UITableView!, numberOfRowsInSection section: Int) -> Int {
+		if questions {
+			return questions!.count
+		} else {
+			return 10
+		}
+	}
+
 	
 	
 

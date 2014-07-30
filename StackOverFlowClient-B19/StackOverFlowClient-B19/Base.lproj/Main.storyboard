@@ -16,34 +16,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="kfw-Kf-qIQ">
-                                <rect key="frame" x="145" y="120" width="311" height="29"/>
-                                <segments>
-                                    <segment title="Activity"/>
-                                    <segment title="Votes"/>
-                                    <segment title="Creation"/>
-                                    <segment title="Relevance"/>
-                                </segments>
-                            </segmentedControl>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="5Ot-pn-pv3">
-                                <rect key="frame" x="214" y="156" width="173" height="29"/>
-                                <segments>
-                                    <segment title="Ascending"/>
-                                    <segment title="Descending"/>
-                                </segments>
-                            </segmentedControl>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="cUn-zK-q4X">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="QuestionCell" id="god-P0-8lf">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="god-P0-8lf" id="GBz-fs-V1r">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="Cwb-Le-z9Q"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="centerX" secondItem="5Ot-pn-pv3" secondAttribute="centerX" id="5E4-8b-EWI"/>
-                            <constraint firstAttribute="centerX" secondItem="kfw-Kf-qIQ" secondAttribute="centerX" id="Eqw-Aw-X31"/>
-                            <constraint firstItem="kfw-Kf-qIQ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="56" id="K5w-0e-Osa"/>
-                            <constraint firstItem="5Ot-pn-pv3" firstAttribute="top" secondItem="kfw-Kf-qIQ" secondAttribute="bottom" constant="8" id="bGR-Fg-l8k"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="2Ku-pe-nfT"/>
                     <connections>
                         <outlet property="searchDisplayController" destination="aPW-fp-OUR" id="bjL-XJ-amG"/>
+                        <outlet property="tableView" destination="cUn-zK-q4X" id="b9i-7j-IhG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
