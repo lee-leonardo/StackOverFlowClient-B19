@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  DetailViewController.swift
 //  StackOverFlowClient-B19
 //
 //  Created by Leonardo Lee on 7/28/14.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, NetworkControllerDelegate, UITableViewDataSource {
+class DetailViewController: UIViewController, NetworkControllerDelegate, UITableViewDataSource {
 	
 	@IBOutlet weak var tableView: UITableView!
 	let networkController = NetworkController()
@@ -19,8 +19,8 @@ class ViewController: UIViewController, NetworkControllerDelegate, UITableViewDa
 		tableView.rowHeight = UITableViewAutomaticDimension
 		tableView.estimatedRowHeight = 35
 		
-		getJSON(fromSample: true)
-
+		getJSONFromSample()
+//		getJSONFrom("Tag")
 	}
 
 	override func didReceiveMemoryWarning() {
@@ -32,9 +32,24 @@ class ViewController: UIViewController, NetworkControllerDelegate, UITableViewDa
 	}
 	
 //MARK: View Controller methods
-//TODO: getJSON
-	func getJSON(fromSample: Bool? = false) {
-		if fromSample {
+	func getJSONFrom(searchEntry: String) {
+		self.networkController.fetchQuestionsForSearchTerm(searchEntry, callback: {
+			(questions: [Question]?, errorDescription: String?) -> Void in
+			if errorDescription {
+				//Error handling.
+			} else {
+				NSOperationQueue.mainQueue().addOperationWithBlock({
+					() -> Void in
+					self.questions = questions
+					self.tableView.reloadData()
+					
+					})
+				
+				//println(questions)
+			}
+			})
+	}
+	func getJSONFromSample() {
 			self.networkController.fetchQuestionsFromSampleData({
 				(questions: [Question]?, errorDescription: String?) -> Void in
 				if errorDescription {
@@ -49,22 +64,6 @@ class ViewController: UIViewController, NetworkControllerDelegate, UITableViewDa
 					//println(questions)
 				}
 				})
-		}
-		self.networkController.fetchQuestionsForSearchTerm("", callback: {
-			(questions: [Question]?, errorDescription: String?) -> Void in
-			if errorDescription {
-				//Error handling.
-			} else {
-				NSOperationQueue.mainQueue().addOperationWithBlock({
-					() -> Void in
-					self.questions = questions
-					self.tableView.reloadData()
-
-					})
-				
-				//println(questions)
-			}
-			})
 	}
 	
 //MARK: UITableViewDataSource

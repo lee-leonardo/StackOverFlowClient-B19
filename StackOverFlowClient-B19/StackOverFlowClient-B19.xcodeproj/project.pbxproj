@@ -16,7 +16,7 @@
 		384B96481989EC5600A8D045 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384B96471989EC5600A8D045 /* RootViewController.swift */; };
 		38600C5B19883B0E007CFD78 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38600C5A19883B0E007CFD78 /* NetworkController.swift */; };
 		387316911986E3B7006735D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387316901986E3B7006735D2 /* AppDelegate.swift */; };
-		387316931986E3B7006735D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387316921986E3B7006735D2 /* ViewController.swift */; };
+		387316931986E3B7006735D2 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387316921986E3B7006735D2 /* DetailViewController.swift */; };
 		387316961986E3B7006735D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 387316941986E3B7006735D2 /* Main.storyboard */; };
 		387316981986E3B7006735D2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 387316971986E3B7006735D2 /* Images.xcassets */; };
 		387316A41986E3B7006735D2 /* StackOverFlowClient_B19Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387316A31986E3B7006735D2 /* StackOverFlowClient_B19Tests.swift */; };
@@ -46,7 +46,7 @@
 		3873168B1986E3B7006735D2 /* StackOverFlowClient-B19.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "StackOverFlowClient-B19.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3873168F1986E3B7006735D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		387316901986E3B7006735D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		387316921986E3B7006735D2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		387316921986E3B7006735D2 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		387316951986E3B7006735D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		387316971986E3B7006735D2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3873169D1986E3B7006735D2 /* StackOverFlowClient-B19Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "StackOverFlowClient-B19Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -140,9 +140,9 @@
 		387316AD1986E3E0006735D2 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				387316921986E3B7006735D2 /* ViewController.swift */,
-				38600C5A19883B0E007CFD78 /* NetworkController.swift */,
 				384B96471989EC5600A8D045 /* RootViewController.swift */,
+				387316921986E3B7006735D2 /* DetailViewController.swift */,
+				38600C5A19883B0E007CFD78 /* NetworkController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -271,7 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				387316931986E3B7006735D2 /* ViewController.swift in Sources */,
+				387316931986E3B7006735D2 /* DetailViewController.swift in Sources */,
 				387B0E5B1986EF6D00C75A56 /* Question.swift in Sources */,
 				38600C5B19883B0E007CFD78 /* NetworkController.swift in Sources */,
 				384B96481989EC5600A8D045 /* RootViewController.swift in Sources */,

@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6190.4"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="sZy-9O-y4G">
             <objects>
-                <viewController id="T2w-w7-Y1g" customClass="ViewController" customModule="StackOverFlowClient_B19" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="T2w-w7-Y1g" customClass="DetailViewController" customModule="StackOverFlowClient_B19" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="G08-d1-ciL"/>
                         <viewControllerLayoutGuide type="bottom" id="Diz-D8-8hi"/>

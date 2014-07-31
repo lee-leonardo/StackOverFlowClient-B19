@@ -20,58 +20,23 @@ class NetworkController: NSObject, NSURLSessionTaskDelegate {
 //	This project is going to focus on building a data task and also the download task.
 //	Normally you choose between a data task and a upload task for an action, but since we are not uploading, we are going to focus on the data task.
 	
-//MARK: ParseMethod
-	func parseJSONData(inputJSONData: NSData) -> [Question] {
-		var questions = [Question]()
-		
-		if let dataDict = NSJSONSerialization.JSONObjectWithData(inputJSONData, options: nil, error: nil) as? NSDictionary {
-			//This is where I'll draw data from the item dictionary and apply then use a question initializer to build them up from the dictionary built here.
-			//println(dataDict) //This is the whole dictionary
-			if let items = dataDict["items"] as? NSArray {
-				//println(item) //This is the whole list of question
-				for item in items {
-					//println(item) //This is an individual question
-					if let itemEntry = item as? NSDictionary {
-						//println("Individual Item Entry: \(itemEntry)")
-						//, , ,, display_name, userID
-
-						let question = Question()
-						question.title = itemEntry["title"] as? String
-						question.questionID = itemEntry["user_id"] as? Int
-						question.answerCount = itemEntry["answer_count"] as? Int
-						question.tags = itemEntry["tags"] as? Array
-						
-						if let itemOwner = itemEntry["owner"] as? NSDictionary {
-							question.displayName = itemOwner["display_name"] as? String
-							question.userID = itemOwner["user_id"] as? Int
-						}
-						
-						//println("\(question.displayName): \(question.title)")
-						questions.append(question)
-					}
-				}
-			}
-		}
-		
-		//println(questions)
-		return questions
-	}
-	
 //MARK: SampleData method
 	func fetchQuestionsFromSampleData(callback:(questions: [Question]?, errorDescription: String?) -> Void) {
 		
 		let sampleData = NSData(contentsOfFile: NSBundle.mainBundle().pathForResource("TestJSON", ofType: "json"))
-		var questions = self.parseJSONData(sampleData)
+		var questions = Question.parseJSONData(sampleData)
 		callback(questions: questions, errorDescription: nil)
 		
 	}
 	
 //MARK: FetchQuestion method
-	func fetchQuestionsForSearchTerm(searchTerm: String, callback: (questions : [Question]?, errorDescription : String) -> Void) {
+	func fetchQuestionsForSearchTerm(searchTerm: String, callback: (questions : [Question]?, errorDescription : String?) -> Void) {
 		
 //		var url = NSURL(string: apiDomain + searchEndpoint + "&tagged=\(searchTerm)")
 		var url = NSURL(string: self.prepareURL())
 		//var url = NSURL(string: "http://api.stackexchange.com/2.2/search?order=desc&sort=activity&tagged=swift&site=stackoverflow")
+		
+//		if searchTerm {}
 		
 		let session = NSURLSession(configuration: NSURLSessionConfiguration.defaultSessionConfiguration())
 		
@@ -92,8 +57,9 @@ class NetworkController: NSObject, NSURLSessionTaskDelegate {
 						switch httpResponse.statusCode {
 						case 200:
 							println("Successfully received data. Send to parser.")
-							//println(data)
-							self.parseJSONData(data)
+//							println(data)
+							var questions = Question.parseJSONData(data)
+							callback(questions: questions, errorDescription: nil)
 							
 						case 400:
 							println("400 Bad parameters")
@@ -152,6 +118,7 @@ class NetworkController: NSObject, NSURLSessionTaskDelegate {
 		struct methods {
 			let search = "search?"
 			let answer = "answer?"
+			let tags = "tags?"
 		}
 //		var currentSearch = api.domain + api.version + api.methods.search
 	}

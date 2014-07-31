@@ -38,4 +38,41 @@ class Question {
 //		self.answered = answered
 		self.tags = withTags
 	}
+	
+	//MARK: ParseMethod
+	//Attributed to Collin Atherton (his idea of putting the parser in the data obj)
+	class func parseJSONData(inputJSONData: NSData) -> [Question] {
+		var questions = [Question]()
+		
+		if let dataDict = NSJSONSerialization.JSONObjectWithData(inputJSONData, options: nil, error: nil) as? NSDictionary {
+			//This is where I'll draw data from the item dictionary and apply then use a question initializer to build them up from the dictionary built here.
+			//println(dataDict) //This is the whole dictionary
+			if let items = dataDict["items"] as? NSArray {
+				//println(item) //This is the whole list of question
+				for item in items {
+					//println(item) //This is an individual question
+					if let itemEntry = item as? NSDictionary {
+						//println("Individual Item Entry: \(itemEntry)")
+						
+						let question = Question()
+						question.title = itemEntry["title"] as? String
+						question.questionID = itemEntry["user_id"] as? Int
+						question.answerCount = itemEntry["answer_count"] as? Int
+						question.tags = itemEntry["tags"] as? Array
+						
+						if let itemOwner = itemEntry["owner"] as? NSDictionary {
+							question.displayName = itemOwner["display_name"] as? String
+							question.userID = itemOwner["user_id"] as? Int
+						}
+						
+						//println("\(question.displayName): \(question.title)")
+						questions.append(question)
+					}
+				}
+			}
+		}
+		
+		//println(questions)
+		return questions
+	}
 }
