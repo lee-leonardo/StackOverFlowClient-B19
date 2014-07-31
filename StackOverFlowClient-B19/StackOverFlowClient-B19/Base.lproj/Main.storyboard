@@ -16,16 +16,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Lnt-uM-Xcr">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Lnt-uM-Xcr">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="QuestionCell" id="Ag8-2q-PS1">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="QuestionCell" id="Ag8-2q-PS1" customClass="QuestionCell" customModule="StackOverFlowClient_B19" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ag8-2q-PS1" id="PtS-Lf-Ks5">
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Fake Text" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffB-GA-hEW">
+                                                    <rect key="frame" x="8" y="8" width="584" height="27"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="20"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ffB-GA-hEW" firstAttribute="leading" secondItem="PtS-Lf-Ks5" secondAttribute="leading" constant="8" id="1OR-mg-ucL"/>
+                                                <constraint firstItem="ffB-GA-hEW" firstAttribute="top" secondItem="PtS-Lf-Ks5" secondAttribute="top" constant="8" id="IpO-BJ-zMC"/>
+                                                <constraint firstAttribute="trailing" secondItem="ffB-GA-hEW" secondAttribute="trailing" constant="8" id="WEz-TL-vld"/>
+                                                <constraint firstAttribute="bottom" secondItem="ffB-GA-hEW" secondAttribute="bottom" constant="8" id="xUo-Qs-DBd"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="textView" destination="ffB-GA-hEW" id="N24-4A-kxz"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -34,6 +51,12 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Lnt-uM-Xcr" secondAttribute="trailing" id="0kV-0G-NI0"/>
+                            <constraint firstItem="Diz-D8-8hi" firstAttribute="top" secondItem="Lnt-uM-Xcr" secondAttribute="bottom" id="ASL-nc-SUR"/>
+                            <constraint firstItem="Lnt-uM-Xcr" firstAttribute="top" secondItem="lBc-kP-9dP" secondAttribute="top" id="Acb-JD-RxT"/>
+                            <constraint firstItem="Lnt-uM-Xcr" firstAttribute="leading" secondItem="lBc-kP-9dP" secondAttribute="leading" id="l2B-TC-37p"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="tableView" destination="Lnt-uM-Xcr" id="RTg-D4-Wyp"/>

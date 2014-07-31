@@ -16,6 +16,9 @@ class ViewController: UIViewController, NetworkControllerDelegate, UITableViewDa
                             
 	override func viewDidLoad() {
 		super.viewDidLoad()
+		tableView.rowHeight = UITableViewAutomaticDimension
+		tableView.estimatedRowHeight = 35
+		
 		getJSON(fromSample: true)
 
 	}
@@ -59,21 +62,20 @@ class ViewController: UIViewController, NetworkControllerDelegate, UITableViewDa
 
 					})
 				
-//				println(questions)
+				//println(questions)
 			}
 			})
 	}
 	
 //MARK: UITableViewDataSource
 	func tableView(tableView: UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell! {
-		var cell = tableView.dequeueReusableCellWithIdentifier("QuestionCell", forIndexPath: indexPath) as UITableViewCell
+		var cell = tableView.dequeueReusableCellWithIdentifier("QuestionCell", forIndexPath: indexPath) as QuestionCell
 		
 		if questions {
 			var questionDetail = questions![indexPath.row]
-			cell.textLabel.text = questionDetail.title
-
+			cell.textView.scrollEnabled = false
+			cell.textView.text = questionDetail.title
 		}
-		
 		
 		return cell
 	}

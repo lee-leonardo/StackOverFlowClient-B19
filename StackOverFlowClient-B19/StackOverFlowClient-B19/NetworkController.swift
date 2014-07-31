@@ -151,6 +151,7 @@ class NetworkController: NSObject, NSURLSessionTaskDelegate {
 		
 		struct methods {
 			let search = "search?"
+			let answer = "answer?"
 		}
 //		var currentSearch = api.domain + api.version + api.methods.search
 	}
