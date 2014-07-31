@@ -9,7 +9,6 @@
 import Foundation
 
 class Answers {
-//	var owner : Dictionary<String, String>
 	var accepted : Bool?
 	var answerID : Int?
 	var questionID : Int?
@@ -19,7 +18,6 @@ class Answers {
 	
 	convenience init(forQuestion: Int, theAnswer: Int, score: Int) {
 		self.init()
-//		answerer: Dictionary<String, String>,
 //		self.owner = answerer
 		self.questionID = forQuestion
 		self.answerID = theAnswer

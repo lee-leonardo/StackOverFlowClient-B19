@@ -15,6 +15,9 @@ class User {
 	var userID : Int?
 	var rating: Int?
 	
+//	link
+//	profile image
+	
 	var SOEmployee : Bool?
 	
 	init() {}

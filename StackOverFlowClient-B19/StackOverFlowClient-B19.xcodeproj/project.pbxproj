@@ -15,6 +15,7 @@
 		380D5C6A19871499008BAE01 /* Answers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387B0E5C1986F0A600C75A56 /* Answers.swift */; };
 		384B96481989EC5600A8D045 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384B96471989EC5600A8D045 /* RootViewController.swift */; };
 		38600C5B19883B0E007CFD78 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38600C5A19883B0E007CFD78 /* NetworkController.swift */; };
+		38659DAC198AF04A000AB338 /* SOQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38659DAB198AF04A000AB338 /* SOQuery.swift */; };
 		387316911986E3B7006735D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387316901986E3B7006735D2 /* AppDelegate.swift */; };
 		387316931986E3B7006735D2 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387316921986E3B7006735D2 /* DetailViewController.swift */; };
 		387316961986E3B7006735D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 387316941986E3B7006735D2 /* Main.storyboard */; };
@@ -25,6 +26,8 @@
 		387B0E5B1986EF6D00C75A56 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387B0E5A1986EF6D00C75A56 /* Question.swift */; };
 		387B0E5D1986F0A600C75A56 /* Answers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387B0E5C1986F0A600C75A56 /* Answers.swift */; };
 		389065C31989910C00B868E2 /* TestJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = 389065C21989910C00B868E2 /* TestJSON.json */; };
+		38BBBC2D198AC2D200046AA7 /* SOClientv1.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 38BBBC2B198AC2D200046AA7 /* SOClientv1.xcdatamodeld */; };
+		38BBBC32198AC79700046AA7 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BBBC31198AC79700046AA7 /* Tag.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +46,7 @@
 		380D5C66198712BB008BAE01 /* AnswerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerTests.swift; sourceTree = "<group>"; };
 		384B96471989EC5600A8D045 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		38600C5A19883B0E007CFD78 /* NetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
+		38659DAB198AF04A000AB338 /* SOQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SOQuery.swift; sourceTree = "<group>"; };
 		3873168B1986E3B7006735D2 /* StackOverFlowClient-B19.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "StackOverFlowClient-B19.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3873168F1986E3B7006735D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		387316901986E3B7006735D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +61,9 @@
 		387B0E5A1986EF6D00C75A56 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		387B0E5C1986F0A600C75A56 /* Answers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Answers.swift; sourceTree = "<group>"; };
 		389065C21989910C00B868E2 /* TestJSON.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TestJSON.json; sourceTree = "<group>"; };
+		38BBBC2C198AC2D200046AA7 /* SOClientv1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SOClientv1.xcdatamodel; sourceTree = "<group>"; };
+		38BBBC2E198AC6DD00046AA7 /* StackOverFlowClient-B19-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StackOverFlowClient-B19-Bridging-Header.h"; sourceTree = "<group>"; };
+		38BBBC31198AC79700046AA7 /* Tag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,12 +165,32 @@
 		387316AF1986E3F5006735D2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				38BBBC29198AAFF100046AA7 /* Data Models */,
+				38BBBC2A198AAFF600046AA7 /* View Models */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		38BBBC29198AAFF100046AA7 /* Data Models */ = {
+			isa = PBXGroup;
+			children = (
 				387B0E581986ED5A00C75A56 /* User.swift */,
 				387B0E5A1986EF6D00C75A56 /* Question.swift */,
 				387B0E5C1986F0A600C75A56 /* Answers.swift */,
+				38BBBC2B198AC2D200046AA7 /* SOClientv1.xcdatamodeld */,
+				38BBBC2E198AC6DD00046AA7 /* StackOverFlowClient-B19-Bridging-Header.h */,
+				38BBBC31198AC79700046AA7 /* Tag.swift */,
+				38659DAB198AF04A000AB338 /* SOQuery.swift */,
+			);
+			name = "Data Models";
+			sourceTree = "<group>";
+		};
+		38BBBC2A198AAFF600046AA7 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
 				38744E86198A06AD00D47B46 /* QuestionCell.swift */,
 			);
-			name = Model;
+			name = "View Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,11 +300,14 @@
 			files = (
 				387316931986E3B7006735D2 /* DetailViewController.swift in Sources */,
 				387B0E5B1986EF6D00C75A56 /* Question.swift in Sources */,
+				38BBBC32198AC79700046AA7 /* Tag.swift in Sources */,
+				38659DAC198AF04A000AB338 /* SOQuery.swift in Sources */,
 				38600C5B19883B0E007CFD78 /* NetworkController.swift in Sources */,
 				384B96481989EC5600A8D045 /* RootViewController.swift in Sources */,
 				387316911986E3B7006735D2 /* AppDelegate.swift in Sources */,
 				38744E87198A06AD00D47B46 /* QuestionCell.swift in Sources */,
 				387B0E5D1986F0A600C75A56 /* Answers.swift in Sources */,
+				38BBBC2D198AC2D200046AA7 /* SOClientv1.xcdatamodeld in Sources */,
 				387B0E591986ED5A00C75A56 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -402,9 +432,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "StackOverFlowClient-B19/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "StackOverFlowClient-B19/StackOverFlowClient-B19-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -413,9 +446,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "StackOverFlowClient-B19/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "StackOverFlowClient-B19/StackOverFlowClient-B19-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -484,6 +519,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		38BBBC2B198AC2D200046AA7 /* SOClientv1.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				38BBBC2C198AC2D200046AA7 /* SOClientv1.xcdatamodel */,
+			);
+			currentVersion = 38BBBC2C198AC2D200046AA7 /* SOClientv1.xcdatamodel */;
+			path = SOClientv1.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 387316831986E3B7006735D2 /* Project object */;
 }

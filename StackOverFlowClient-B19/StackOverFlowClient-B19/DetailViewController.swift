@@ -8,9 +8,11 @@
 
 import UIKit
 
-class DetailViewController: UIViewController, NetworkControllerDelegate, UITableViewDataSource {
+class DetailViewController: UIViewController, NetworkControllerDelegate, UITableViewDataSource, UISearchBarDelegate {
 	
 	@IBOutlet weak var tableView: UITableView!
+	@IBOutlet weak var detailSearch: UISearchBar!
+	
 	let networkController = NetworkController()
 	var questions: [Question]?
                             
@@ -18,6 +20,11 @@ class DetailViewController: UIViewController, NetworkControllerDelegate, UITable
 		super.viewDidLoad()
 		tableView.rowHeight = UITableViewAutomaticDimension
 		tableView.estimatedRowHeight = 35
+		self.networkController.delegate = self
+		self.detailSearch.delegate = self
+		
+		
+//		self.detailSearch
 		
 		getJSONFromSample()
 //		getJSONFrom("Tag")
@@ -26,8 +33,8 @@ class DetailViewController: UIViewController, NetworkControllerDelegate, UITable
 	override func didReceiveMemoryWarning() {
 		super.didReceiveMemoryWarning()
 	}
+	
 	override func viewWillAppear(animated: Bool) {
-		self.networkController.delegate = self
 
 	}
 	
@@ -85,10 +92,18 @@ class DetailViewController: UIViewController, NetworkControllerDelegate, UITable
 			return 10
 		}
 	}
-
 	
-	
-
-
+//MARK: UISearchBarDelegate
+	func searchBarSearchButtonClicked(searchBar: UISearchBar!)  {
+		getJSONFrom(searchBar.text)
+		searchBar.resignFirstResponder()
+	}
 }
+
+
+
+
+
+
+
 
