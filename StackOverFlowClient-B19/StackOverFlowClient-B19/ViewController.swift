@@ -16,13 +16,16 @@ class ViewController: UIViewController, NetworkControllerDelegate, UITableViewDa
                             
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		self.networkController.delegate = self
-		
 		getJSON(fromSample: true)
+
 	}
 
 	override func didReceiveMemoryWarning() {
 		super.didReceiveMemoryWarning()
+	}
+	override func viewWillAppear(animated: Bool) {
+		self.networkController.delegate = self
+
 	}
 	
 //MARK: View Controller methods
@@ -38,6 +41,7 @@ class ViewController: UIViewController, NetworkControllerDelegate, UITableViewDa
 						() -> Void in
 						self.questions = questions
 						self.tableView.reloadData()
+
 						})
 					//println(questions)
 				}
@@ -52,6 +56,7 @@ class ViewController: UIViewController, NetworkControllerDelegate, UITableViewDa
 					() -> Void in
 					self.questions = questions
 					self.tableView.reloadData()
+
 					})
 				
 //				println(questions)

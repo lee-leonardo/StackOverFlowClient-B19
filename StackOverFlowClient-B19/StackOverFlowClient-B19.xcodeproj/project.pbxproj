@@ -13,6 +13,7 @@
 		380D5C6819871494008BAE01 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387B0E581986ED5A00C75A56 /* User.swift */; };
 		380D5C6919871496008BAE01 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387B0E5A1986EF6D00C75A56 /* Question.swift */; };
 		380D5C6A19871499008BAE01 /* Answers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387B0E5C1986F0A600C75A56 /* Answers.swift */; };
+		384B96481989EC5600A8D045 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384B96471989EC5600A8D045 /* RootViewController.swift */; };
 		38600C5B19883B0E007CFD78 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38600C5A19883B0E007CFD78 /* NetworkController.swift */; };
 		387316911986E3B7006735D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387316901986E3B7006735D2 /* AppDelegate.swift */; };
 		387316931986E3B7006735D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387316921986E3B7006735D2 /* ViewController.swift */; };
@@ -39,6 +40,7 @@
 		380D5C621987129B008BAE01 /* QuestionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionTests.swift; sourceTree = "<group>"; };
 		380D5C64198712B0008BAE01 /* UserTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTests.swift; sourceTree = "<group>"; };
 		380D5C66198712BB008BAE01 /* AnswerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerTests.swift; sourceTree = "<group>"; };
+		384B96471989EC5600A8D045 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		38600C5A19883B0E007CFD78 /* NetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
 		3873168B1986E3B7006735D2 /* StackOverFlowClient-B19.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "StackOverFlowClient-B19.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3873168F1986E3B7006735D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 			children = (
 				387316921986E3B7006735D2 /* ViewController.swift */,
 				38600C5A19883B0E007CFD78 /* NetworkController.swift */,
+				384B96471989EC5600A8D045 /* RootViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 				387316931986E3B7006735D2 /* ViewController.swift in Sources */,
 				387B0E5B1986EF6D00C75A56 /* Question.swift in Sources */,
 				38600C5B19883B0E007CFD78 /* NetworkController.swift in Sources */,
+				384B96481989EC5600A8D045 /* RootViewController.swift in Sources */,
 				387316911986E3B7006735D2 /* AppDelegate.swift in Sources */,
 				387B0E5D1986F0A600C75A56 /* Answers.swift in Sources */,
 				387B0E591986ED5A00C75A56 /* User.swift in Sources */,
