@@ -12,6 +12,7 @@ class Question {
 //	title, questionID, tags, answer_count, display_name, userID
 	
 	var title: String?
+	var link: String?
 	var questionID: Int?
 	var answerCount : Int?
 	var displayName : String?
@@ -54,6 +55,7 @@ class Question {
 						
 						let question = Question()
 						question.title = itemEntry["title"] as? String
+						question.link = itemEntry["link"] as? String
 						question.questionID = itemEntry["user_id"] as? Int
 						question.answerCount = itemEntry["answer_count"] as? Int
 						question.tags = itemEntry["tags"] as? Array
@@ -63,7 +65,7 @@ class Question {
 							question.userID = itemOwner["user_id"] as? Int
 						}
 						
-						//println("\(question.displayName): \(question.title)")
+						//println("\(question.displayName): \(question.link)")
 						questions.append(question)
 					}
 				}

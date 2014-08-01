@@ -28,13 +28,13 @@ class TempTag {
 		
 		if let dataDict = NSJSONSerialization.JSONObjectWithData(data, options: nil, error: nil) as? NSDictionary {
 			//This is where I'll draw data from the item dictionary and apply then use a tag initializer to build them up from the dictionary built here.
-			println(dataDict) //This is the whole dictionary
+			//println(dataDict) //This is the whole dictionary
 			if let items = dataDict["items"] as? NSArray {
-				println(items) //This is the whole list of tag
+				//println(items) //This is the whole list of tag
 				for item in items {
-					println(item) //This is an individual tag
+					//println(item) //This is an individual tag
 					if let itemEntry = item as? NSDictionary {
-						println("Individual Item Entry: \(itemEntry)")
+						//println("Individual Item Entry: \(itemEntry)")
 						
 						if itemEntry["is_moderator_only"] as? Bool == false {
 							let tag = TempTag()

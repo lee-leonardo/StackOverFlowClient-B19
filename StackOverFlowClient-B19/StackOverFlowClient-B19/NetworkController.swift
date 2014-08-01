@@ -163,9 +163,6 @@ class NetworkController: NSObject, NSURLSessionTaskDelegate {
 		var returnString = apiDomain + version + search
 		var urlSegments = [String]()
 		
-		//urlSegments.append(apiDomain)
-		//urlSegments.append(version)
-		//urlSegments.append(search)
 		urlSegments.append( "intitle=" + intitle )
 		//println(intitle)
 		
@@ -183,13 +180,11 @@ class NetworkController: NSObject, NSURLSessionTaskDelegate {
 		return returnString
 	}
 	
+	//TODO: prepareTagURL corrections (make the string fire off properly)
 	func prepareTagURL(searchTag inname: String)-> String {
 		var returnString = apiDomain + version + TempTags
 		var urlSegments = [String]()
 		
-		//urlSegments.append(apiDomain)
-		//urlSegments.append(version)
-		//urlSegments.append(search)
 		urlSegments.append( "inname=" + inname )
 		//println(intitle)
 		
@@ -205,7 +200,7 @@ class NetworkController: NSObject, NSURLSessionTaskDelegate {
 			}
 		}
 		returnString += site
-		println("Within Search Query: \(returnString)")
+		//println("Within Search Query: \(returnString)")
 		return returnString
 	}
 	

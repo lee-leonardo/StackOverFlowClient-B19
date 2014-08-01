@@ -71,7 +71,7 @@ class DetailViewController: UIViewController, NetworkControllerDelegate, UITable
 					
 					})
 				
-				//println(questions)
+				//println(tags)
 			}
 			})
 	}
@@ -110,7 +110,7 @@ class DetailViewController: UIViewController, NetworkControllerDelegate, UITable
 	}
 	func tableView(tableView: UITableView!, numberOfRowsInSection section: Int) -> Int {
 		
-		if questions?.count > 0 {
+		if questions?.count > 0 && searchQuestion {
 			return questions!.count
 		} else if tags?.count > 0 {
 			return tags!.count
