@@ -35,7 +35,7 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ag8-2q-PS1" id="PtS-Lf-Ks5">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Fake Text" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffB-GA-hEW">
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Future results..." selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffB-GA-hEW">
                                                     <rect key="frame" x="8" y="8" width="584" height="27"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="20"/>

@@ -13,7 +13,6 @@ protocol NetworkControllerDelegate {}
 class NetworkController: NSObject, NSURLSessionTaskDelegate {
 //	NSURLSessionDownloadDelegate
 	var delegate : NetworkControllerDelegate?
-	
 
 	struct api {
 		let domain = "http://api.stackexchange.com/"
@@ -84,7 +83,6 @@ class NetworkController: NSObject, NSURLSessionTaskDelegate {
 						case 200:
 							//println("Successfully received data. Send to parser.")
 							//println(data)
-							//if searchScope == "" {} if searchScope == "" {}
 							var questions = Question.parseJSONData(inputJSON: data)
 							callback(questions: questions, errorDescription: nil)
 							
@@ -133,7 +131,6 @@ class NetworkController: NSObject, NSURLSessionTaskDelegate {
 					case 200:
 						//println("Successfully received data. Send to parser.")
 						//println(data)
-						//if searchScope == "" {} if searchScope == "" {}
 						var tags = TempTag.parseJSONData(inputJSON: data)
 						callback(tag: tags, errorDescription: nil)
 						

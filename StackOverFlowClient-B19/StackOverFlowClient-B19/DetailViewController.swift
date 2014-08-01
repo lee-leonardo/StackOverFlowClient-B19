@@ -15,6 +15,7 @@ class DetailViewController: UIViewController, NetworkControllerDelegate, UITable
 	
 	let networkController = NetworkController()
 	var searchQuestion = true
+	var errorCode: String?
 	var questions: [Question]?
 	var tags: [TempTag]?
                             
@@ -25,19 +26,9 @@ class DetailViewController: UIViewController, NetworkControllerDelegate, UITable
 		self.networkController.delegate = self
 		self.detailSearch.delegate = self
 		
-		
-//		self.detailSearch
-		
+		//Testing Code
 		getJSONFromSample()
-//		getJSONFrom("Tag")
-	}
-
-	override func didReceiveMemoryWarning() {
-		super.didReceiveMemoryWarning()
-	}
-	
-	override func viewWillAppear(animated: Bool) {
-
+		//getJSONFrom("Tag")
 	}
 	
 //MARK: View Controller methods
@@ -45,7 +36,7 @@ class DetailViewController: UIViewController, NetworkControllerDelegate, UITable
 		self.networkController.fetchQuestionsForSearchTerm(title, callback: {
 			(questions: [Question]?, errorDescription: String?) -> Void in
 			if errorDescription {
-				//Error handling.
+//				self.errorCode = errorDescription
 			} else {
 				NSOperationQueue.mainQueue().addOperationWithBlock({
 					() -> Void in
@@ -62,7 +53,7 @@ class DetailViewController: UIViewController, NetworkControllerDelegate, UITable
 		self.networkController.fetchTagsForSearchTag(tag, callback: {
 			(tags: [TempTag]?, errorDescription: String?) -> Void in
 			if errorDescription {
-				//Error handling.
+//				self.errorCode = errorDescription
 			} else {
 				NSOperationQueue.mainQueue().addOperationWithBlock({
 					() -> Void in
@@ -79,7 +70,7 @@ class DetailViewController: UIViewController, NetworkControllerDelegate, UITable
 			self.networkController.fetchQuestionsFromSampleData({
 				(questions: [Question]?, errorDescription: String?) -> Void in
 				if errorDescription {
-					//Error handling.
+					//Can't really produce an error.
 				} else {
 					NSOperationQueue.mainQueue().addOperationWithBlock({
 						() -> Void in
@@ -96,14 +87,13 @@ class DetailViewController: UIViewController, NetworkControllerDelegate, UITable
 	func tableView(tableView: UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell! {
 		var cell = tableView.dequeueReusableCellWithIdentifier("SearchCell", forIndexPath: indexPath) as SearchCell
 		cell.textView.scrollEnabled = false
-
-		if searchQuestion && questions?.count > 0 {
-			var questionDetail = questions![indexPath.row]
-			cell.textView.text = questionDetail.title
-		}
-		if searchQuestion == false && tags?.count > 0 {
-			var tagDetail = tags![indexPath.row]
-			cell.textView.text = tagDetail.name
+		
+		if errorCode {
+			cell.errorDescription = errorCode
+		} else if let question = questions?[indexPath.row] {
+			cell.cellQuestion = question
+		} else if let tag = tags?[indexPath.row] {
+			cell.cellTag = tag
 		}
 		
 		return cell
@@ -115,11 +105,14 @@ class DetailViewController: UIViewController, NetworkControllerDelegate, UITable
 		} else if tags?.count > 0 {
 			return tags!.count
 		}
-		return 10
+		return 1
 	}
 	
 //MARK: UISearchBarDelegate
 	func searchBarSearchButtonClicked(searchBar: UISearchBar!)  {
+		//self.errorCode = nil
+		//self.questions = nil
+		//self.tags = nil
 		
 		switch searchBar.selectedScopeButtonIndex {
 		case 0:
