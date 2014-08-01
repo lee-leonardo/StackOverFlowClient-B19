@@ -1,5 +1,5 @@
 //
-//  QuestionCell.swift
+//  SearchCell.swift
 //  StackOverFlowClient-B19
 //
 //  Created by Leonardo Lee on 7/30/14.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class QuestionCell: UITableViewCell {
+class SearchCell: UITableViewCell {
 
 	@IBOutlet weak var textView: UITextView!
 	

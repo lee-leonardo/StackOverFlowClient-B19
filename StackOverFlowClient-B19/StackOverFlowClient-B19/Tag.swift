@@ -13,5 +13,5 @@ class Tag: NSManagedObject {
 
     @NSManaged var text: String
     @NSManaged var questions: NSSet
-
+	
 }

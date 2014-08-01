@@ -1,0 +1,84 @@
+{
+	"has_more" : false,
+	"items" : [
+			   {
+      "has_synonyms" : true,
+      "count" : 4290,
+      "name" : "swift",
+      "is_required" : false,
+      "is_moderator_only" : false
+			   },
+			   {
+      "has_synonyms" : false,
+      "count" : 597,
+      "name" : "swiftmailer",
+      "is_required" : false,
+      "is_moderator_only" : false
+			   },
+			   {
+      "has_synonyms" : false,
+      "count" : 113,
+      "name" : "openstack-swift",
+      "is_required" : false,
+      "is_moderator_only" : false
+			   },
+			   {
+      "has_synonyms" : true,
+      "count" : 60,
+      "name" : "swift-playground",
+      "is_required" : false,
+      "is_moderator_only" : false
+			   },
+			   {
+      "has_synonyms" : false,
+      "count" : 6,
+      "name" : "swift-extensions",
+      "is_required" : false,
+      "is_moderator_only" : false
+			   },
+			   {
+      "has_synonyms" : false,
+      "count" : 6,
+      "name" : "swiftype",
+      "is_required" : false,
+      "is_moderator_only" : false
+			   },
+			   {
+      "has_synonyms" : false,
+      "count" : 4,
+      "name" : "swift-generics",
+      "is_required" : false,
+      "is_moderator_only" : false
+			   },
+			   {
+      "has_synonyms" : false,
+      "count" : 4,
+      "name" : "swiften",
+      "is_required" : false,
+      "is_moderator_only" : false
+			   },
+			   {
+      "has_synonyms" : false,
+      "count" : 4,
+      "name" : "swiftsuspenders",
+      "is_required" : false,
+      "is_moderator_only" : false
+			   },
+			   {
+      "has_synonyms" : false,
+      "count" : 3,
+      "name" : "swift-mt",
+      "is_required" : false,
+      "is_moderator_only" : false
+			   },
+			   {
+      "has_synonyms" : false,
+      "count" : 1,
+      "name" : "swift-language",
+      "is_required" : false,
+      "is_moderator_only" : false
+			   }
+			   ],
+	"quota_max" : 300,
+	"quota_remaining" : 202
+}

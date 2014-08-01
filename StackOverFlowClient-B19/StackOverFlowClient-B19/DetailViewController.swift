@@ -14,7 +14,9 @@ class DetailViewController: UIViewController, NetworkControllerDelegate, UITable
 	@IBOutlet weak var detailSearch: UISearchBar!
 	
 	let networkController = NetworkController()
+	var searchQuestion = true
 	var questions: [Question]?
+	var tags: [TempTag]?
                             
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -39,8 +41,8 @@ class DetailViewController: UIViewController, NetworkControllerDelegate, UITable
 	}
 	
 //MARK: View Controller methods
-	func getJSONFrom(searchEntry: String) {
-		self.networkController.fetchQuestionsForSearchTerm(searchEntry, callback: {
+	func getJSONFromQuestion(searchEntry title: String) {
+		self.networkController.fetchQuestionsForSearchTerm(title, callback: {
 			(questions: [Question]?, errorDescription: String?) -> Void in
 			if errorDescription {
 				//Error handling.
@@ -48,6 +50,23 @@ class DetailViewController: UIViewController, NetworkControllerDelegate, UITable
 				NSOperationQueue.mainQueue().addOperationWithBlock({
 					() -> Void in
 					self.questions = questions
+					self.tableView.reloadData()
+					
+					})
+				
+				//println(questions)
+			}
+			})
+	}
+	func getJSONFromTag(searchTag tag: String) {
+		self.networkController.fetchTagsForSearchTag(tag, callback: {
+			(tags: [TempTag]?, errorDescription: String?) -> Void in
+			if errorDescription {
+				//Error handling.
+			} else {
+				NSOperationQueue.mainQueue().addOperationWithBlock({
+					() -> Void in
+					self.tags = tags
 					self.tableView.reloadData()
 					
 					})
@@ -75,29 +94,51 @@ class DetailViewController: UIViewController, NetworkControllerDelegate, UITable
 	
 //MARK: UITableViewDataSource
 	func tableView(tableView: UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell! {
-		var cell = tableView.dequeueReusableCellWithIdentifier("QuestionCell", forIndexPath: indexPath) as QuestionCell
-		
-		if questions {
+		var cell = tableView.dequeueReusableCellWithIdentifier("SearchCell", forIndexPath: indexPath) as SearchCell
+		cell.textView.scrollEnabled = false
+
+		if searchQuestion && questions?.count > 0 {
 			var questionDetail = questions![indexPath.row]
-			cell.textView.scrollEnabled = false
 			cell.textView.text = questionDetail.title
+		}
+		if searchQuestion == false {
+			var tagDetail = tags![indexPath.row]
+			cell.textView.text = tagDetail.name
 		}
 		
 		return cell
 	}
 	func tableView(tableView: UITableView!, numberOfRowsInSection section: Int) -> Int {
-		if questions {
+		
+		if questions?.count > 0 {
 			return questions!.count
-		} else {
-			return 10
+		} else if tags?.count > 0 {
+			return tags!.count
 		}
+		return 10
 	}
 	
 //MARK: UISearchBarDelegate
 	func searchBarSearchButtonClicked(searchBar: UISearchBar!)  {
-		getJSONFrom(searchBar.text)
+		
+		switch searchBar.selectedScopeButtonIndex {
+		case 0:
+			getJSONFromQuestion(searchEntry: searchBar.text)
+		case 1:
+			getJSONFromTag(searchTag: searchBar.text)
+		default:
+			println("This will never fire...\nError in searchBarSearchButtonClicked method.")
+		}
+		
 		searchBar.resignFirstResponder()
 	}
+	func searchBar(searchBar: UISearchBar!, selectedScopeButtonIndexDidChange selectedScope: Int) {
+		//println("\(searchBar.scopeButtonTitles[selectedScope])")
+		searchQuestion = !searchQuestion
+		//println(searchQuestion)
+		
+	}
+
 }
 
 
