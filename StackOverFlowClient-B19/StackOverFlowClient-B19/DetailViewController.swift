@@ -101,7 +101,7 @@ class DetailViewController: UIViewController, NetworkControllerDelegate, UITable
 			var questionDetail = questions![indexPath.row]
 			cell.textView.text = questionDetail.title
 		}
-		if searchQuestion == false {
+		if searchQuestion == false && tags?.count > 0 {
 			var tagDetail = tags![indexPath.row]
 			cell.textView.text = tagDetail.name
 		}

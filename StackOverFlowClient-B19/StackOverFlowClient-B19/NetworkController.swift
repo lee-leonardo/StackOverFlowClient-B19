@@ -110,8 +110,8 @@ class NetworkController: NSObject, NSURLSessionTaskDelegate {
 	}
 	func fetchTagsForSearchTag(searchTag: String, callback: (tag : [TempTag]?, errorDescription : String?) -> Void) {
 		
-		var url = NSURL(string: prepareTagURL(searchTag: searchTag))
-		//var url = NSURL(string: "http://api.stackexchange.com/2.2/search?order=desc&sort=activity&tagged=swift&site=stackoverflow")
+//		var url = NSURL(string: prepareTagURL(searchTag: searchTag))
+		var url = NSURL(string: "http://api.stackexchange.com/2.2/tags?order=desc&sort=popular&inname=swift&site=stackoverflow")
 		
 		let session = NSURLSession(configuration: NSURLSessionConfiguration.defaultSessionConfiguration())
 		
@@ -160,7 +160,7 @@ class NetworkController: NSObject, NSURLSessionTaskDelegate {
 	
 //MARK: TagStringGenerator method
 	func prepareQuestionURL(searchBar intitle: String)-> String {
-		var returnString = apiDomain + version + TempTags
+		var returnString = apiDomain + version + search
 		var urlSegments = [String]()
 		
 		//urlSegments.append(apiDomain)
@@ -184,7 +184,7 @@ class NetworkController: NSObject, NSURLSessionTaskDelegate {
 	}
 	
 	func prepareTagURL(searchTag inname: String)-> String {
-		var returnString = apiDomain + version + search
+		var returnString = apiDomain + version + TempTags
 		var urlSegments = [String]()
 		
 		//urlSegments.append(apiDomain)
@@ -205,7 +205,7 @@ class NetworkController: NSObject, NSURLSessionTaskDelegate {
 			}
 		}
 		returnString += site
-		//println("Within Search Query: \(returnString)")
+		println("Within Search Query: \(returnString)")
 		return returnString
 	}
 	
