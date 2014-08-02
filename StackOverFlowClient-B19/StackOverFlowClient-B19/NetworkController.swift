@@ -61,8 +61,8 @@ class NetworkController: NSObject, NSURLSessionTaskDelegate {
 	
 //MARK: FetchQuestion method
 	func fetchQuestionsForSearchTerm(searchTerm: String, callback: (questions : [Question]?, errorDescription : String?) -> Void) {
-		var url = NSURL(string: prepareQuestionURL(searchBar: searchTerm))
-		//var url = NSURL(string: "http://api.stackexchange.com/2.2/search?order=desc&sort=activity&tagged=swift&site=stackoverflow")
+//		var url = NSURL(string: prepareQuestionURL(searchBar: searchTerm))
+		var url = NSURL(string: "http://api.stackexchange.com/2.2/search?order=desc&sort=activity&tagged=swift&site=stackoverflow")
 		
 		let session = NSURLSession(configuration: NSURLSessionConfiguration.defaultSessionConfiguration())
 		
@@ -72,13 +72,13 @@ class NetworkController: NSObject, NSURLSessionTaskDelegate {
 				if error {
 				//Check errors
 				//General callback, passing error description and no errors.
-					//println(error)
+					println(error)
 					callback(questions: nil, errorDescription: "Unfortunately this didn't work...")
 					//Prevents the task.resume() from firing.
 					return
 					
 				} else {
-					//println(reponse)
+					println(reponse)
 					if let httpResponse = reponse as? NSHTTPURLResponse { //1. Downcast the NSURLResponse to get httpResponse
 						switch httpResponse.statusCode {
 						case 200:
@@ -121,13 +121,13 @@ class NetworkController: NSObject, NSURLSessionTaskDelegate {
 			if error {
 				//Check errors
 				//General callback, passing error description and no errors.
-				//println(error)
+				println(error)
 				callback(tag: nil, errorDescription: "Unfortunately this didn't work...")
 				//Prevents the task.resume() from firing.
 				return
 				
 			} else {
-				//println(reponse)
+				println(reponse)
 				if let httpResponse = reponse as? NSHTTPURLResponse { //1. Downcast the NSURLResponse to get httpResponse
 					switch httpResponse.statusCode {
 					case 200:
@@ -163,6 +163,7 @@ class NetworkController: NSObject, NSURLSessionTaskDelegate {
 		var returnString = apiDomain + version + search
 		var urlSegments = [String]()
 		
+		
 		urlSegments.append( "intitle=" + intitle )
 		//println(intitle)
 		
@@ -176,19 +177,22 @@ class NetworkController: NSObject, NSURLSessionTaskDelegate {
 			}
 		}
 		returnString += site
-		//println("Within Search Query: \(returnString)")
+		println("Within Search Query: \(returnString)")
 		return returnString
 	}
 	
 	//TODO: prepareTagURL corrections (make the string fire off properly)
-	func prepareTagURL(searchTag inname: String)-> String {
+	func prepareTagURL(searchTag inname: String?)-> String {
 		var returnString = apiDomain + version + TempTags
 		var urlSegments = [String]()
 		
-		urlSegments.append( "inname=" + inname )
+		
+		
+		if inname {
+			urlSegments.append( "name=" + inname! )
+		}
+		//urlSegments.append( "" ) //popular
 		//println(intitle)
-		
-		
 		
 		var firstTime = true
 		for segment in urlSegments {

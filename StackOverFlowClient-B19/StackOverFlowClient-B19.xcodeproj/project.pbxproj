@@ -26,6 +26,7 @@
 		387B0E5B1986EF6D00C75A56 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387B0E5A1986EF6D00C75A56 /* Question.swift */; };
 		387B0E5D1986F0A600C75A56 /* Answers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387B0E5C1986F0A600C75A56 /* Answers.swift */; };
 		389065C31989910C00B868E2 /* TestJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = 389065C21989910C00B868E2 /* TestJSON.json */; };
+		38959CC1198C9DF1009B57D0 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38959CC0198C9DF1009B57D0 /* TutorialViewController.swift */; };
 		38BA256C198B755800988F6F /* TempTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BA256B198B755800988F6F /* TempTag.swift */; };
 		38BBBC2D198AC2D200046AA7 /* SOClientv1.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 38BBBC2B198AC2D200046AA7 /* SOClientv1.xcdatamodeld */; };
 		38BBBC32198AC79700046AA7 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BBBC31198AC79700046AA7 /* Tag.swift */; };
@@ -62,6 +63,7 @@
 		387B0E5A1986EF6D00C75A56 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		387B0E5C1986F0A600C75A56 /* Answers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Answers.swift; sourceTree = "<group>"; };
 		389065C21989910C00B868E2 /* TestJSON.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TestJSON.json; sourceTree = "<group>"; };
+		38959CC0198C9DF1009B57D0 /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 		38BA256B198B755800988F6F /* TempTag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TempTag.swift; sourceTree = "<group>"; };
 		38BBBC2C198AC2D200046AA7 /* SOClientv1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SOClientv1.xcdatamodel; sourceTree = "<group>"; };
 		38BBBC2E198AC6DD00046AA7 /* StackOverFlowClient-B19-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StackOverFlowClient-B19-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 				384B96471989EC5600A8D045 /* RootViewController.swift */,
 				387316921986E3B7006735D2 /* DetailViewController.swift */,
 				38600C5A19883B0E007CFD78 /* NetworkController.swift */,
+				38959CC0198C9DF1009B57D0 /* TutorialViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 				387B0E5D1986F0A600C75A56 /* Answers.swift in Sources */,
 				38BBBC2D198AC2D200046AA7 /* SOClientv1.xcdatamodeld in Sources */,
 				38BA256C198B755800988F6F /* TempTag.swift in Sources */,
+				38959CC1198C9DF1009B57D0 /* TutorialViewController.swift in Sources */,
 				387B0E591986ED5A00C75A56 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

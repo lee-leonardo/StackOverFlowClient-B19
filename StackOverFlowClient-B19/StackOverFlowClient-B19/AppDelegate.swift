@@ -16,6 +16,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	func application(application: UIApplication!, didFinishLaunchingWithOptions launchOptions: NSDictionary!) -> Bool {
 		// Override point for customization after application launch.
+		
+		if NSUserDefaults.standardUserDefaults().boolForKey("notFirstTime") {
+			
+		} else {
+			NSUserDefaults.standardUserDefaults().setBool(true, forKey: "notFirstTime")
+		}
+		
+		/*
+		if !NSUserDefaults.standardUserDefaults().boolForKey("firstTime") {
+		NSUserDefaults.standardUserDefaults().setBool(true, forKey: "firstTime")
+		//println("First time the app has fired off!")
+		} else {
+		NSUserDefaults.standardUserDefaults().setBool(false, forKey: "firstTime")
+		}
+		*/
+
+
 		return true
 	}
 

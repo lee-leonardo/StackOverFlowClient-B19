@@ -96,7 +96,7 @@ class DetailViewController: UIViewController, NetworkControllerDelegate, UITable
 	func tableView(tableView: UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell! {
 		var cell = tableView.dequeueReusableCellWithIdentifier("SearchCell", forIndexPath: indexPath) as SearchCell
 		cell.textView.scrollEnabled = false
-
+		
 		if searchQuestion && questions?.count > 0 {
 			var questionDetail = questions![indexPath.row]
 			cell.textView.text = questionDetail.title
@@ -106,16 +106,37 @@ class DetailViewController: UIViewController, NetworkControllerDelegate, UITable
 			cell.textView.text = tagDetail.name
 		}
 		
+//		//println(detailSearch.selectedScopeButtonIndex)
+//			if questions?.count > 0 && detailSearch.selectedScopeButtonIndex == 0 {
+//				var questionDetail = questions![indexPath.row]
+//				cell.textView.text = questionDetail.title
+//			} else if tags?.count > 0 && detailSearch.selectedScopeButtonIndex == 1 {
+//				var tagDetail = tags![indexPath.row]
+//				cell.textView.text = tagDetail.name
+//			}
+
 		return cell
 	}
 	func tableView(tableView: UITableView!, numberOfRowsInSection section: Int) -> Int {
 		
-		if questions?.count > 0 && searchQuestion {
-			return questions!.count
-		} else if tags?.count > 0 {
+//		if questions?.count > 0 && searchQuestion {
+//			return questions!.count
+//		} else if tags?.count > 0 {
+//			return tags!.count
+//		}
+		
+		switch detailSearch.selectedScopeButtonIndex {
+		case 0:
+			if questions?.count > 0 {
+				return questions!.count
+			}
+		case 1:
 			return tags!.count
+		default:
+			println("This should never fire!")
+			return 1
 		}
-		return 10
+		return 1
 	}
 	
 //MARK: UISearchBarDelegate
@@ -123,8 +144,10 @@ class DetailViewController: UIViewController, NetworkControllerDelegate, UITable
 		
 		switch searchBar.selectedScopeButtonIndex {
 		case 0:
+			//tags = nil //?
 			getJSONFromQuestion(searchEntry: searchBar.text)
 		case 1:
+			//questions = nil //?
 			getJSONFromTag(searchTag: searchBar.text)
 		default:
 			println("This will never fire...\nError in searchBarSearchButtonClicked method.")
