@@ -15,13 +15,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 	func application(application: UIApplication!, didFinishLaunchingWithOptions launchOptions: NSDictionary!) -> Bool {
-		// Override point for customization after application launch.
-		
 		if NSUserDefaults.standardUserDefaults().boolForKey("notFirstTime") {
+			println("This is not the first time!")
+			
 			
 		} else {
+			println("This is the first time!")
 			NSUserDefaults.standardUserDefaults().setBool(true, forKey: "notFirstTime")
+			
 		}
+		
+		// Override point for customization after application launch.
 		
 		/*
 		if !NSUserDefaults.standardUserDefaults().boolForKey("firstTime") {

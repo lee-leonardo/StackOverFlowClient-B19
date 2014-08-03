@@ -78,7 +78,7 @@ class NetworkController: NSObject, NSURLSessionTaskDelegate {
 					return
 					
 				} else {
-					println(reponse)
+					//println(reponse)
 					if let httpResponse = reponse as? NSHTTPURLResponse { //1. Downcast the NSURLResponse to get httpResponse
 						switch httpResponse.statusCode {
 						case 200:
@@ -127,7 +127,7 @@ class NetworkController: NSObject, NSURLSessionTaskDelegate {
 				return
 				
 			} else {
-				println(reponse)
+				//println(reponse)
 				if let httpResponse = reponse as? NSHTTPURLResponse { //1. Downcast the NSURLResponse to get httpResponse
 					switch httpResponse.statusCode {
 					case 200:

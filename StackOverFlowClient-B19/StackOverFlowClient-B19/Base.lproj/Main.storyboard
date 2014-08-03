@@ -35,7 +35,7 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ag8-2q-PS1" id="PtS-Lf-Ks5">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Fake Text" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffB-GA-hEW">
+                                                <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Fake Text" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffB-GA-hEW">
                                                     <rect key="frame" x="8" y="8" width="584" height="27"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
@@ -56,6 +56,7 @@
                                 </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="T2w-w7-Y1g" id="eMP-1V-TzQ"/>
+                                    <outlet property="delegate" destination="T2w-w7-Y1g" id="9Ja-JN-EBV"/>
                                 </connections>
                             </tableView>
                         </subviews>
@@ -158,6 +159,39 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PXq-f1-OHe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1812" y="-157"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="yk5-JZ-a0h">
+            <objects>
+                <viewController storyboardIdentifier="WebView" id="w1k-OW-n7K" customClass="WebViewController" customModule="StackOverFlowClient_B19" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="V7a-dE-E5c"/>
+                        <viewControllerLayoutGuide type="bottom" id="9KF-Q1-w7S"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Cxr-4Y-AMK">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Ee-dF-uG1">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8Ee-dF-uG1" firstAttribute="top" secondItem="Cxr-4Y-AMK" secondAttribute="top" id="2aI-rG-YET"/>
+                            <constraint firstItem="9KF-Q1-w7S" firstAttribute="top" secondItem="8Ee-dF-uG1" secondAttribute="bottom" id="Tye-J6-XmC"/>
+                            <constraint firstItem="8Ee-dF-uG1" firstAttribute="leading" secondItem="Cxr-4Y-AMK" secondAttribute="leading" id="X8V-r1-LeF"/>
+                            <constraint firstAttribute="trailing" secondItem="8Ee-dF-uG1" secondAttribute="trailing" id="iey-gd-Qml"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="8Ee-dF-uG1" id="6Cy-RN-M6a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oXN-TF-pG3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1812" y="527"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="PlJ-Ih-67U">

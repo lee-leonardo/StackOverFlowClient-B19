@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DetailViewController: UIViewController, NetworkControllerDelegate, UITableViewDataSource, UISearchBarDelegate {
+class DetailViewController: UIViewController, NetworkControllerDelegate, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
 	
 	@IBOutlet weak var tableView: UITableView!
 	@IBOutlet weak var detailSearch: UISearchBar!
@@ -91,6 +91,29 @@ class DetailViewController: UIViewController, NetworkControllerDelegate, UITable
 				}
 				})
 	}
+//MARK: UITableViewDelegate
+	func tableView(tableView: UITableView!, didSelectRowAtIndexPath indexPath: NSIndexPath!) {
+		let webView = self.storyboard.instantiateViewControllerWithIdentifier("WebView") as WebViewController
+		
+		switch detailSearch.selectedScopeButtonIndex {
+		case 0:
+			//println("Case 1")
+			webView.questionContent = self.questions?[indexPath.row]
+			
+		case 1:
+			//println("Case 2")
+			webView.tagContent = self.tags?[indexPath.row]
+			
+		default:
+			println("This will never fire...")
+		}
+		
+		if self.navigationController {
+			self.navigationController.pushViewController(webView, animated: true)
+		}
+		
+		tableView.deselectRowAtIndexPath(indexPath, animated: true)
+	}
 	
 //MARK: UITableViewDataSource
 	func tableView(tableView: UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell! {
@@ -138,6 +161,7 @@ class DetailViewController: UIViewController, NetworkControllerDelegate, UITable
 		}
 		return 1
 	}
+	
 	
 //MARK: UISearchBarDelegate
 	func searchBarSearchButtonClicked(searchBar: UISearchBar!)  {
